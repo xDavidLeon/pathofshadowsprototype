@@ -48,6 +48,7 @@ public:
 	inline LPD3DXFONT					GetDebugFont(void)							{ return m_dbgFont; }
 	inline LPD3DXFONT					GetDebugFontBig(void)							{ return m_dbgFont_big; }
 	inline DWORD				GetLanguage(void)									{ return m_subtitles; }
+	inline DWORD				GetDebug(void)									{ return m_debug; }
 
 	inline D3DPRESENT_PARAMETERS GetParameters(void)						{ return m_PresentParameters; }
 
@@ -75,6 +76,8 @@ private:
 								m_hCbResolution,
 								m_hLbSubsEnabled,
 								m_hTrgSubsEnabled,
+								m_hLblDebug,
+								m_hCbDebug,
 								m_hLblAnisotropy,
 								m_hCbAnisotropy;
 

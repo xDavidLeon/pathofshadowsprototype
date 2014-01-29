@@ -60,6 +60,8 @@ World::World()
 	#else
 		//DebugSystem::get().is_triggers_active = false;
 	#endif
+
+	if (g_App.GetDebug() > 0) DebugSystem::get().debug_ON = true;
 }
 
 void World::setDebugMode(bool d)
