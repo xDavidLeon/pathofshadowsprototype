@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="data\shaders\shaders.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="mesh_manager.cpp" />
+    <ClCompile Include="scene_manager.cpp" />
+    <ClCompile Include="texture_manager.cpp" />
+    <ClCompile Include="world.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_animation.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_automat.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_bt.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_camera.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_charcontroller.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_light.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_model.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_player_controller.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_rigidbody.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_shadow_actions.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_transform.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="system_automat.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_bt.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_camera.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_physics.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_playercontroller.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_renderer.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_sound.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="angular.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="behaviour_tree.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="automat.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_patrol.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="btnode.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_helper.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="aut_player.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet_debug_drawer.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="capplication.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="console_lua.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="d3ddefs.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="xml_parser.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="winproc.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_controller.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_controller_3rd.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_controller_dbg.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_factory.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_manager.cpp">
+      <Filter>EntityManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="system_animation.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox_controller.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="iostatus.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="splash_screen.cpp" />
+    <ClCompile Include="component_enemy_data.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_gatekeeper.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="dijkstra.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="component_shadow.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_trigger.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_common.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="BTDeadEnemy.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation_manager.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="system_light.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_shadow.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="system_trigger.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="config_manager.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_manager.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="component_unique.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="system_unique.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="component_billboard.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="component_particle_effect.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh_builder.cpp" />
+    <ClCompile Include="vision_interface.cpp" />
+    <ClCompile Include="system_debug.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_crow.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="bt_goddess.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_03.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_04.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_01.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_02.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_05.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_06.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_07.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_08.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_09.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_05_2.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="cine_Seq_10.cpp">
+      <Filter>Cinematics</Filter>
+    </ClCompile>
+    <ClCompile Include="first_load_screen.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="game_state.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="game_state_manager.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="title_screen.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="material.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="mesh_manager.h" />
+    <ClInclude Include="scene_manager.h" />
+    <ClInclude Include="texture_manager.h" />
+    <ClInclude Include="world.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_animation.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_automat.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_bt.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_camera.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_charcontroller.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_light.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_model.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_player_controller.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_rigidbody.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_shadow_actions.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_transform.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="system_animation.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_automat.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_bt.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_camera.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_physics.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_playercontroller.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_renderer.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_sound.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="angular.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="automat.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="behaviour_tree.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_patrol.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="btnode.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_functions.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_helper.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="bone_adjust.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="aabb.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="aut_player.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_debug_drawer.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="capplication.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="console_lua.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="d3ddefs.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="data_provider.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="data_saver.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ik_bone.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="ik_handler.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="xml_parser.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_controller.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_controller_3rd.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_controller_dbg.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_factory.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_manager.h">
+      <Filter>EntityManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox_controller.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="iostatus.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="splash_screen.h" />
+    <ClInclude Include="component_enemy_data.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_gatekeeper.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="dijkstra.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="component_shadow.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_trigger.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_common.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="BTDeadEnemy.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation_manager.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="system_trigger.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_light.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="system_shadow.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="config_manager.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="counter_clock.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_manager.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="component_unique.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="system_unique.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="component_billboard.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="component_particle_effect.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="vision_interface.h" />
+    <ClInclude Include="frustum.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="system_debug.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_crow.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="bt_goddess.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_03.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_04.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_01.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_02.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_05.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_06.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_07.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_08.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_09.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_05_2.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="cine_Seq_10.h">
+      <Filter>Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="first_load_screen.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="game_state.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="game_state_manager.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="title_screen.h">
+      <Filter>App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c218d2e6-a899-45a9-8070-10957dd61139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{c2a7f48c-cbdc-4bfc-8642-32c262795d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{69624dae-c0d3-461b-b535-2068d0fe51a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{e5cd2c95-8b5e-47ec-adcb-3dd008df0728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{953a9b8c-4ddb-4769-a916-6b5cb5b00456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LUA">
+      <UniqueIdentifier>{2e66576c-953e-454b-b9e1-b275f0454f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{acdff0d6-cb5d-421f-8438-2aaca8fd40f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{c4a50b97-c48f-4e3c-9339-f95090291492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityManagement">
+      <UniqueIdentifier>{6b12820a-0421-4d20-ae98-ed3b07332a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cinematics">
+      <UniqueIdentifier>{314a919c-3dad-4c1e-837a-e4539eed4665}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>App</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Path of Shadows.rc">
+      <Filter>App</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

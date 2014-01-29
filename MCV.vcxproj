@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2625FCAB-F37B-431C-9D48-9C2F946709B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MCV</RootNamespace>
+    <ProjectName>Path of Shadows</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;B:\Work\MCV\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>.\Build\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>.\Build\$(Configuration)\</OutDir>
+    <IntDir>.\Build\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\lib;B:\Work\MCV\lib\bullet-2.81-rev2613\src;B:\Work\MCV\lib\FMOD\inc;B:\Work\MCV\lib\SLB\include;B:\Work\MCV\lib\SLB\include\SLB\lua;B:\Work\MCV\lib\cal3d;B:\Work\MCV\lib\SLB\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;fmodex_vc.lib;nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\lib;B:\Work\MCV\lib\bullet-2.81-rev2613\src;B:\Work\MCV\lib\FMOD\inc;B:\Work\MCV\lib\SLB\include;B:\Work\MCV\lib\SLB\include\SLB\lua;B:\Work\MCV\lib\cal3d;B:\Work\MCV\lib\SLB\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;fmodex_vc.lib;nvapi.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="angular.cpp" />
+    <ClCompile Include="automat.cpp" />
+    <ClCompile Include="aut_player.cpp" />
+    <ClCompile Include="behaviour_tree.cpp" />
+    <ClCompile Include="BTDeadEnemy.cpp" />
+    <ClCompile Include="btnode.cpp" />
+    <ClCompile Include="bt_common.cpp" />
+    <ClCompile Include="bt_crow.cpp" />
+    <ClCompile Include="bt_gatekeeper.cpp" />
+    <ClCompile Include="bt_goddess.cpp" />
+    <ClCompile Include="bt_patrol.cpp" />
+    <ClCompile Include="bullet_debug_drawer.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="camera_controller_dbg.cpp" />
+    <ClCompile Include="camera_controller.cpp" />
+    <ClCompile Include="camera_controller_3rd.cpp" />
+    <ClCompile Include="capplication.cpp" />
+    <ClCompile Include="cine_Seq_01.cpp" />
+    <ClCompile Include="cine_Seq_02.cpp" />
+    <ClCompile Include="cine_Seq_03.cpp" />
+    <ClCompile Include="cine_Seq_04.cpp" />
+    <ClCompile Include="cine_Seq_05.cpp" />
+    <ClCompile Include="cine_Seq_05_2.cpp" />
+    <ClCompile Include="cine_Seq_06.cpp" />
+    <ClCompile Include="cine_Seq_07.cpp" />
+    <ClCompile Include="cine_Seq_08.cpp" />
+    <ClCompile Include="cine_Seq_09.cpp" />
+    <ClCompile Include="cine_Seq_10.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="component_animation.cpp" />
+    <ClCompile Include="component_automat.cpp" />
+    <ClCompile Include="component_billboard.cpp" />
+    <ClCompile Include="component_bt.cpp" />
+    <ClCompile Include="component_camera.cpp" />
+    <ClCompile Include="component_charcontroller.cpp" />
+    <ClCompile Include="component_enemy_data.cpp" />
+    <ClCompile Include="component_light.cpp" />
+    <ClCompile Include="component_model.cpp" />
+    <ClCompile Include="component_particle_effect.cpp" />
+    <ClCompile Include="component_player_controller.cpp" />
+    <ClCompile Include="component_rigidbody.cpp" />
+    <ClCompile Include="component_shadow.cpp" />
+    <ClCompile Include="component_shadow_actions.cpp" />
+    <ClCompile Include="component_trigger.cpp" />
+    <ClCompile Include="component_unique.cpp" />
+    <ClCompile Include="config_manager.cpp" />
+    <ClCompile Include="console_lua.cpp" />
+    <ClCompile Include="d3ddefs.cpp" />
+    <ClCompile Include="dijkstra.cpp" />
+    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="entity_factory.cpp" />
+    <ClCompile Include="entity_manager.cpp" />
+    <ClCompile Include="first_load_screen.cpp" />
+    <ClCompile Include="game_state.cpp" />
+    <ClCompile Include="game_state_manager.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="iostatus.cpp" />
+    <ClCompile Include="logic_manager.cpp" />
+    <ClCompile Include="lua_helper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="mesh_builder.cpp" />
+    <ClCompile Include="mesh_manager.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="system_debug.cpp" />
+    <ClCompile Include="system_light.cpp" />
+    <ClCompile Include="system_shadow.cpp" />
+    <ClCompile Include="navigation_manager.cpp" />
+    <ClCompile Include="splash_screen.cpp" />
+    <ClCompile Include="system_animation.cpp" />
+    <ClCompile Include="system_automat.cpp" />
+    <ClCompile Include="system_bt.cpp" />
+    <ClCompile Include="system_camera.cpp" />
+    <ClCompile Include="system_playercontroller.cpp" />
+    <ClCompile Include="system_physics.cpp" />
+    <ClCompile Include="scene_manager.cpp" />
+    <ClCompile Include="system_renderer.cpp" />
+    <ClCompile Include="system_sound.cpp" />
+    <ClCompile Include="system_trigger.cpp" />
+    <ClCompile Include="system_unique.cpp" />
+    <ClCompile Include="texture_manager.cpp" />
+    <ClCompile Include="component_transform.cpp" />
+    <ClCompile Include="title_screen.cpp" />
+    <ClCompile Include="vision_interface.cpp" />
+    <ClCompile Include="winproc.cpp" />
+    <ClCompile Include="world.cpp" />
+    <ClCompile Include="xbox_controller.cpp" />
+    <ClCompile Include="xml_parser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aabb.h" />
+    <ClInclude Include="angular.h" />
+    <ClInclude Include="automat.h" />
+    <ClInclude Include="aut_player.h" />
+    <ClInclude Include="behaviour_tree.h" />
+    <ClInclude Include="bone_adjust.h" />
+    <ClInclude Include="BTDeadEnemy.h" />
+    <ClInclude Include="btnode.h" />
+    <ClInclude Include="bt_common.h" />
+    <ClInclude Include="bt_crow.h" />
+    <ClInclude Include="bt_gatekeeper.h" />
+    <ClInclude Include="bt_goddess.h" />
+    <ClInclude Include="bt_patrol.h" />
+    <ClInclude Include="bullet_debug_drawer.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="camera_controller_dbg.h" />
+    <ClInclude Include="camera_controller.h" />
+    <ClInclude Include="camera_controller_3rd.h" />
+    <ClInclude Include="capplication.h" />
+    <ClInclude Include="cine_Seq_01.h" />
+    <ClInclude Include="cine_Seq_02.h" />
+    <ClInclude Include="cine_Seq_03.h" />
+    <ClInclude Include="cine_Seq_04.h" />
+    <ClInclude Include="cine_Seq_05.h" />
+    <ClInclude Include="cine_Seq_05_2.h" />
+    <ClInclude Include="cine_Seq_06.h" />
+    <ClInclude Include="cine_Seq_07.h" />
+    <ClInclude Include="cine_Seq_08.h" />
+    <ClInclude Include="cine_Seq_09.h" />
+    <ClInclude Include="cine_Seq_10.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="component_animation.h" />
+    <ClInclude Include="component_automat.h" />
+    <ClInclude Include="component_billboard.h" />
+    <ClInclude Include="component_bt.h" />
+    <ClInclude Include="component_camera.h" />
+    <ClInclude Include="component_charcontroller.h" />
+    <ClInclude Include="component_enemy_data.h" />
+    <ClInclude Include="component_light.h" />
+    <ClInclude Include="component_model.h" />
+    <ClInclude Include="component_particle_effect.h" />
+    <ClInclude Include="component_player_controller.h" />
+    <ClInclude Include="component_rigidbody.h" />
+    <ClInclude Include="component_shadow.h" />
+    <ClInclude Include="component_shadow_actions.h" />
+    <ClInclude Include="component_trigger.h" />
+    <ClInclude Include="component_unique.h" />
+    <ClInclude Include="config_manager.h" />
+    <ClInclude Include="console_lua.h" />
+    <ClInclude Include="counter_clock.h" />
+    <ClInclude Include="d3ddefs.h" />
+    <ClInclude Include="data_provider.h" />
+    <ClInclude Include="data_saver.h" />
+    <ClInclude Include="dijkstra.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="entity_factory.h" />
+    <ClInclude Include="entity_manager.h" />
+    <ClInclude Include="first_load_screen.h" />
+    <ClInclude Include="frustum.h" />
+    <ClInclude Include="game_state.h" />
+    <ClInclude Include="game_state_manager.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="ik_bone.h" />
+    <ClInclude Include="ik_handler.h" />
+    <ClInclude Include="iostatus.h" />
+    <ClInclude Include="logic_manager.h" />
+    <ClInclude Include="lua_functions.h" />
+    <ClInclude Include="lua_helper.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="mesh_manager.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="system_debug.h" />
+    <ClInclude Include="system_light.h" />
+    <ClInclude Include="system_shadow.h" />
+    <ClInclude Include="navigation_manager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="splash_screen.h" />
+    <ClInclude Include="system_animation.h" />
+    <ClInclude Include="system_automat.h" />
+    <ClInclude Include="system_bt.h" />
+    <ClInclude Include="system_camera.h" />
+    <ClInclude Include="system_playercontroller.h" />
+    <ClInclude Include="system_physics.h" />
+    <ClInclude Include="scene_manager.h" />
+    <ClInclude Include="system_renderer.h" />
+    <ClInclude Include="system_sound.h" />
+    <ClInclude Include="system_trigger.h" />
+    <ClInclude Include="system_unique.h" />
+    <ClInclude Include="texture_manager.h" />
+    <ClInclude Include="component_transform.h" />
+    <ClInclude Include="title_screen.h" />
+    <ClInclude Include="vision_interface.h" />
+    <ClInclude Include="world.h" />
+    <ClInclude Include="xbox_controller.h" />
+    <ClInclude Include="xml_parser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib\bullet-build\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{2edd41df-8105-4e96-8df8-c7a1911f8826}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\bullet-build\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{03d60ea5-ebb0-404c-a719-403ca7f022bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\bullet-build\src\BulletMultiThreaded\BulletMultiThreaded.vcxproj">
+      <Project>{3f488699-e17e-4a7f-9fac-0d6be7e4e61b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\bullet-build\src\LinearMath\LinearMath.vcxproj">
+      <Project>{7daeb079-42b9-440d-a0d4-687cedaa5dcd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\cal3d\cal3d.vcxproj">
+      <Project>{86ad39b7-dde7-4f46-b5bf-2154b047c112}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\expat\expat_static.vcxproj">
+      <Project>{8e486d40-757d-4b4c-b3e7-1c00d584058f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\SLB\SLB.vcxproj">
+      <Project>{9677c84b-2edc-48d7-ba37-911331ddb3cf}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="data\shaders\shaders.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Path of Shadows.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
