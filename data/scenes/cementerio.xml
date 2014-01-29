@@ -1,0 +1,5656 @@
+<scene subFile='cementerio.xml' nav='nav_cementerio.xml'>
+	<moon x='0.622498' y='-0.76456' z='0.167167' />
+	<obj>
+		<name>goddess_crow</name>
+		<type>GODDESS</type>
+		<transform>0.5 0.0 -0.866025 0.0 1.0 0.0 0.866025 0.0 0.5 4.85684 1.82931 35.1551</transform>
+		<model>
+			<character>raven</character>
+			<mat>
+				<material_name>tech_crow</material_name>
+				<diffuse>hardcoded/raven_i</diffuse>
+				<emissive>hardcoded/raven_d</emissive>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>txu_p003</name>
+		<type>ENEMY</type>
+		<transform>1 0 0 0 1 0 0 0 1 -22.1359 1.09857 16.4813</transform>
+		<model>
+			<character>xu_shield</character>
+		<visible>true</visible>
+			<mat>
+				<material_name>tech_skin</material_name>
+				<diffuse>hardcoded/xu_escudo_d</diffuse>
+				<normalmap>hardcoded/xu_escudo_n</normalmap>
+			</mat>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+		<physics shape='CHARACTER' static='false' kinematic='false'/>
+		<disabled />
+		<ai type='patroller' />
+		<patrol_points>
+			<waypoint pos_x="-22.1359" pos_y="1.09857" pos_z="16.4813" />
+			<waypoint pos_x="-14.8593" pos_y="1.09857" pos_z="18.6131" />
+			<waypoint pos_x="-13.4496" pos_y="1.09857" pos_z="17.8083" />
+			<waypoint pos_x="-11.1588" pos_y="1.09857" pos_z="11.9436" />
+			<waypoint pos_x="16.7172" pos_y="-1.47996" pos_z="19.3787" />
+			<waypoint pos_x="16.9827" pos_y="-1.47996" pos_z="18.1773" />
+			<waypoint pos_x="-10.7658" pos_y="1.09857" pos_z="10.1563" />
+			<waypoint pos_x="-11.3801" pos_y="1.09857" pos_z="2.94891" />
+			<waypoint pos_x="-20.299" pos_y="1.09857" pos_z="0.0987148" />
+			<waypoint pos_x="-22.5585" pos_y="1.09857" pos_z="0.555374" />
+			<waypoint pos_x="-23.5892" pos_y="1.09857" pos_z="2.49131" />
+			<waypoint pos_x="-26.6306" pos_y="1.09857" pos_z="13.5371" />
+			<waypoint pos_x="-25.5716" pos_y="1.09857" pos_z="15.2891" />
+			<waypoint pos_x="-22.7353" pos_y="1.09857" pos_z="16.1392" />
+		</patrol_points>
+	</obj>
+	<obj>
+		<name>txu_g003</name>
+		<type>ENEMY</type>
+		<transform>1 0 0 0 1 0 0 0 1 -39.3223 0.824036 3.54981</transform>
+		<model>
+			<character>xu_farolillo</character>
+		<visible>true</visible>
+			<mat>
+				<material_name>tech_skin</material_name>
+				<diffuse>hardcoded/xu_farolillo_d</diffuse>
+				<emissive>hardcoded/xu_farolillo_i</emissive>
+				<normalmap>hardcoded/xu_farolillo_n</normalmap>
+			</mat>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+		<physics shape='CHARACTER' static='false' kinematic='false'/>
+		<ai type='gatekeeper' />
+		<gatekeep_points>
+			<gk_pos pos_x="-39.3223" pos_y="0.824036" pos_z="3.54981" />
+			<lookAt pos_x="-37.944" pos_y="0.824036" pos_z="3.95244" />
+		</gatekeep_points>
+	</obj>
+	<obj>
+		<name>txu_g002</name>
+		<type>ENEMY</type>
+		<transform>1 0 0 0 1 0 0 0 1 -52.3867 2.80552 -20.6351</transform>
+		<model>
+			<character>xu</character>
+		<visible>true</visible>
+			<mat>
+				<material_name>tech_skin</material_name>
+				<diffuse>hardcoded/xu_d</diffuse>
+				<normalmap>hardcoded/xu_n</normalmap>
+			</mat>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+		<physics shape='CHARACTER' static='false' kinematic='false'/>
+		<ai type='gatekeeper' />
+		<gatekeep_points>
+			<gk_pos pos_x="-52.3867" pos_y="2.80552" pos_z="-20.6351" />
+			<lookAt pos_x="-52.7033" pos_y="2.80552" pos_z="-19.2346" />
+		</gatekeep_points>
+	</obj>
+	<obj>
+		<name>txu_g001</name>
+		<type>ENEMY</type>
+		<transform>1 0 0 0 1 0 0 0 1 8.53566 -0.792632 16.1683</transform>
+		<model>
+			<character>xu</character>
+		<visible>true</visible>
+			<mat>
+				<material_name>tech_skin</material_name>
+				<diffuse>hardcoded/xu_d</diffuse>
+				<normalmap>hardcoded/xu_n</normalmap>
+			</mat>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+		<physics shape='CHARACTER' static='false' kinematic='false'/>
+		<ai type='gatekeeper' />
+		<gatekeep_points>
+			<gk_pos pos_x="8.53566" pos_y="-0.792632" pos_z="16.1683" />
+			<lookAt pos_x="7.15742" pos_y="-0.792632" pos_z="15.7657" />
+		</gatekeep_points>
+	</obj>
+	<obj>
+		<name>point light053</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.1241 4.90341 -27.4507</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light052</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.1293 4.90341 -30.8915</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light051</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -22.5485 1.11317 31.5666</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light050</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.5666 1.90102 12.9223</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light049</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -46.7472 2.5839 -5.94994</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light048</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -29.7959 0.706768 -15.1859</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light047</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -1.09988 0.178599 1.21382</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light046</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 23.3669 -0.681931 5.92828</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light045</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 24.7347 -0.681931 15.4156</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light044</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 25.2521 -1.67245 26.5426</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light043</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.4886 1.21427 -0.076149</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light042</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.7366 1.21427 -0.724489</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light041</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -24.94 1.21427 0.436833</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light040</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -52.5405 3.51432 -27.5373</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light039</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.2154 3.51432 -26.2413</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light038</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.851 3.51432 -16.9718</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light037</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -53.1392 3.53921 -7.73477</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light036</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.8584 2.1762 -1.85457</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light035</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.203 2.1762 3.33162</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light034</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -45.3827 1.93381 4.66059</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light033</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -44.0854 1.93381 -0.573021</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light032</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.9435 1.33987 1.06588</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light031</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3247 1.33987 6.44259</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light030</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -18.8622 1.11317 20.2376</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light029</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.1502 1.11317 19.6753</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light026</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.75972 -0.449845 34.4957</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light025</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.68062 -0.449845 38.4105</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light024</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -36.7575 1.17206 -14.0699</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light023</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -34.0853 1.17206 -23.891</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light022</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 13.8841 -0.133349 27.7138</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light021</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.9005 -0.133349 26.9249</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light020</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.52006 0.212136 17.1916</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light019</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.370743 0.212136 10.0195</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light018</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.01973 1.22191 16.1008</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light017</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -4.87041 1.22191 8.9287</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light016</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.3421 1.30523 7.1734</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light015</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.6673 1.21427 3.27701</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light012</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -57.5077 3.53921 -8.87664</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>point light</name>
+		<type>LIGHT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -55.1263 3.51432 -18.1575</transform>
+		<light>
+			<light_type>POINT</light_type>
+			<light_color>(color 255 164 98)</light_color>
+			<light_intensity>1</light_intensity>
+			<light_radius>3.0</light_radius>
+		</light>
+	</obj>
+	<obj>
+		<name>door</name>
+		<type>ANIMATED</type>
+		<transform>-0.258819 0.0 0.965926 0.0 1.0 0.0 -0.965926 0.0 -0.258819 -69.4129 4.08051 -29.3744</transform>
+		<model>
+			<visible>true</visible>
+			<character>animesh_door</character>
+			<mat>
+				<material_name>tech_skin</material_name>
+				<diffuse>hardcoded/door</diffuse>
+			</mat>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>suelo_2</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -93.6913 4.89463 -36.496</transform>
+		<model>
+			<mesh>suelo_2</mesh>
+			<mat>
+				<mix>
+					<diffuse>cesped1</diffuse>
+					<diffuse2>sand</diffuse2>
+					<mask>mask_1</mask>
+				</mix>
+				<lightmap>c_suelo_2_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-27.5502 -1.96842 13.3511 27.5502 1.96842 -13.3511</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>suelo</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.68246 -1.45574 7.5758</transform>
+		<model>
+			<mesh>suelo</mesh>
+			<mat>
+				<mix>
+					<diffuse>cesped1</diffuse>
+					<diffuse2>sand</diffuse2>
+					<mask>mask_4</mask>
+				</mix>
+				<lightmap>c_suelo_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-47.3987 -1.45307 38.5521 47.3987 1.45307 -38.5521</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>rio</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -35.0938 -8.01887 -24.1129</transform>
+		<model>
+			<mesh>rio</mesh>
+			<mat>
+				<diffuse>water</diffuse>
+				<lightmap>water</lightmap>
+				<emissive>water</emissive>
+				<material_name>tech_fwd_water_cementerio</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-33.1903 0.0 33.7351 33.1903 0.0 -33.7351</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>piedras_rio</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -34.4111 -9.99263 -24.1129</transform>
+		<model>
+			<mesh>piedras_rio</mesh>
+			<mat>
+				<diffuse>rocas_rio</diffuse>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-32.5076 0.0 33.7351 32.5076 0.0 -33.7351</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -55.5296 2.81388 -17.3932</transform>
+		<model>
+			<mesh>god ray</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42205 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -56.0849 2.82424 -15.3543</transform>
+		<model>
+			<mesh>god ray001</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -56.0334 2.86566 -16.3087</transform>
+		<model>
+			<mesh>god ray002</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.00062 0.682723 36.5138</transform>
+		<model>
+			<mesh>god ray007</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.41631 -1.53535 1.20735 1.41631 1.53535 -1.20734</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.08943 0.571833 35.5295</transform>
+		<model>
+			<mesh>god ray008</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.40709 -1.56984 0.956062 1.40709 1.56984 -0.956062</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.12754 0.0367527 36.5933</transform>
+		<model>
+			<mesh>god ray010</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.37547 -1.56129 1.19123 1.37547 1.56129 -1.19123</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -56.4431 5.38588 -26.4578</transform>
+		<model>
+			<mesh>god ray011</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.07867 -1.57976 1.90234 2.07867 1.57976 -1.90234</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray012</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -61.584 6.54004 -28.2176</transform>
+		<model>
+			<mesh>god ray012</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.80023 -1.867 1.83093 1.80023 1.867 -1.83093</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -65.9807 7.08246 -29.5108</transform>
+		<model>
+			<mesh>god ray013</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.80023 -1.867 1.83093 1.80023 1.867 -1.83093</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>colision_ia</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.8413 -1.43171 33.1667</transform>
+		<model>
+			<mesh>colision_ia</mesh>
+			<visible>false</visible>
+			<aabb>-1.53444 -1.4381 0.455978 1.53444 1.4381 -0.455978</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>INVISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -34.1821 -0.329057 14.2584</transform>
+		<model>
+			<mesh>colision_ban</mesh>
+			<visible>false</visible>
+			<aabb>-2.66875 -0.635336 2.4281 2.66875 0.635336 -2.4281</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 7.17864 -1.87551 40.1185</transform>
+		<model>
+			<mesh>colision_shadow</mesh>
+			<visible>false</visible>
+			<aabb>-0.416493 -0.815525 1.2339 0.416493 0.815525 -1.2339</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>shadow</name>
+		<type>PLAYER</type>
+		<transform>-0.258819 0.0 0.965926 0.0 1.0 0.0 -0.965926 0.0 -0.258819 12.2978 -2.00011 37.4875</transform>
+		<model>
+			<character>shadow</character>
+			<mat>
+				<material_name>tech_shadow</material_name>
+				<diffuse>hardcoded/shadow_d</diffuse>
+				<emissive>hardcoded/shadow_i</emissive>
+				<normalmap>hardcoded/shadow_n</normalmap>
+				<mask>hardcoded/shadow_bufanda</mask>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.581745 -0.00498399 0.507839 0.409982 1.52444 -0.800522</aabb>
+		</model>
+		<physics shape='CHARACTER' static='false' kinematic='false'/>
+	</obj>
+	<obj>
+		<name>txu_g001</name>
+		<type>DEFAULT</type>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 7.84654 -0.792632 15.967</transform>
+	</obj>
+	<obj>
+		<name>txu_p003</name>
+		<type>DEFAULT</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 -21.4401 1.09857 12.6997</transform>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>trigger001</name>
+		<type>TRIGGER</type>
+			<trigger_radius>1.76843</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger001()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 12.2978 -2.00011 37.4875</transform>
+	</obj>
+	<obj>
+		<name>trigger002</name>
+		<type>TRIGGER</type>
+			<trigger_radius>3.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger002()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 6.13993 -1.64282 36.2851</transform>
+	</obj>
+	<obj>
+		<name>trigger006</name>
+		<type>TRIGGER</type>
+			<trigger_radius>3.048</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger006()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -11.7755 0.242702 10.3647</transform>
+	</obj>
+	<obj>
+		<name>suelo_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -33.8821 -5.64405 2.41971</transform>
+		<model>
+			<mesh>suelo_003</mesh>
+			<mat>
+				<mix>
+					<diffuse>cesped1</diffuse>
+					<diffuse2>sand</diffuse2>
+					<mask>mask_4</mask>
+				</mix>
+				<lightmap>c_suelo_003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-26.3528 -6.43803 45.8388 26.3528 6.43803 -45.8388</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.002 0.976598 30.1209</transform>
+		<model>
+			<mesh>lapidas_box</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-13.2661 -2.98143 11.2632 13.2661 2.98143 -11.2632</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>pos_1</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.8795 1.10616 37.6511</transform>
+	</obj>
+	<obj>
+		<name>r001</name>
+		<type>DEFAULT</type>
+		<transform>-0.26333 0.0 0.964706 0.0 1.0 0.0 -0.964706 0.0 -0.26333 -10.8764 -0.459743 10.7246</transform>
+	</obj>
+	<obj>
+		<name>txu_g002</name>
+		<type>DEFAULT</type>
+		<transform>-0.959056 0.0 -0.283216 0.0 1.0 0.0 0.283216 0.0 -0.959056 -52.545 2.80552 -19.9349</transform>
+	</obj>
+	<obj>
+		<name>trigger008</name>
+		<type>TRIGGER</type>
+			<trigger_radius>3.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger008()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -54.6121 2.10188 -12.2403</transform>
+	</obj>
+	<obj>
+		<name>volume_light001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.1359 -0.395065 26.8434</transform>
+		<model>
+			<mesh>volume_light001</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.3434 -0.395065 28.0927</transform>
+		<model>
+			<mesh>volume_light002</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.52006 0.212136 17.1916</transform>
+		<model>
+			<mesh>volume_light003</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.402154 0.212136 10.026</transform>
+		<model>
+			<mesh>volume_light004</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -5.43347 1.22191 8.9287</transform>
+		<model>
+			<mesh>volume_light005</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.41828 1.13561 15.754</transform>
+		<model>
+			<mesh>volume_light006</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3293 1.02477 6.46858</transform>
+		<model>
+			<mesh>volume_light007</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -57.6406 3.53878 -8.93561</transform>
+		<model>
+			<mesh>volume_light010</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -53.3556 3.53878 -7.71637</transform>
+		<model>
+			<mesh>volume_light011</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light012</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.7807 3.53878 -17.0253</transform>
+		<model>
+			<mesh>volume_light012</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -55.0658 3.53878 -18.2445</transform>
+		<model>
+			<mesh>volume_light013</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.2608 3.53878 -26.3694</transform>
+		<model>
+			<mesh>volume_light014</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -52.6408 3.53878 -27.5886</transform>
+		<model>
+			<mesh>volume_light015</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.8078 1.18135 13.3861</transform>
+		<model>
+			<mesh>volume_light016</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>assets002_</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.98142 -1.14112 35.8541</transform>
+		<model>
+			<mesh>assets002_</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.93845 -1.45107 5.2508 5.93845 1.45107 -5.2508</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.5353 1.51333 -1.19211</transform>
+		<model>
+			<mesh>house004_</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera2_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.94267 -2.4902 5.59303 3.94267 2.4902 -5.59303</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>god001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.17279 0.489525 36.3455</transform>
+		<model>
+			<mesh>god001</mesh>
+			<mat>
+				<diffuse>god_d</diffuse>
+				<lightmap>c_god_l</lightmap>
+				<normalmap>god_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.42907 -1.54647 3.40609 1.42907 1.54647 -3.40609</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>fire_1</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.1221 -0.449845 26.7843</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.6128 -0.61623 27.957</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.6128 -0.61623 27.957</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.1221 -0.449845 26.7843</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>look_2</name>
+		<type>DEFAULT</type>
+		<transform>-0.636586 -0.232699 0.735262 -0.0733867 0.967344 0.242612 -0.767706 0.100485 -0.632874 12.2452 -1.52191 37.4798</transform>
+	</obj>
+	<obj>
+		<name>house_</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.4896 -0.327132 23.2609</transform>
+		<model>
+			<mesh>house_</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-24.8857 -2.38615 22.6081 24.8857 2.38615 -22.6081</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house003_</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -18.9704 3.43442 7.94783</transform>
+		<model>
+			<mesh>house003_</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera2_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>ground_1</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>roof</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>roof_2</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>door</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.81975 -4.60189 7.9866 6.81975 4.60189 -7.9866</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>door</name>
+		<type>DEFAULT</type>
+		<transform>-0.258819 0.0 0.965926 0.0 1.0 0.0 -0.965926 0.0 -0.258819 -69.4129 4.08051 -29.3744</transform>
+	</obj>
+	<obj>
+		<name>fire_007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.75972 -0.449845 34.4957</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.68062 -0.449845 38.4105</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_009</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3293 1.02477 6.46858</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.8994 1.02477 0.997296</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>fire_011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.8994 1.02477 0.997296</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_012</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3293 1.02477 6.46858</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.75972 -0.449845 34.4957</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.68062 -0.449845 38.4105</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 12.5958 -0.449845 27.4221</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.0113 -0.449845 37.3276</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_017</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 11.6533 -1.94916 17.223</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_018</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.7631 0.452245 1.23398</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_019</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -19.9789 0.452245 17.0205</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_020</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -33.8682 0.452245 7.90177</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_021</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -47.6889 1.23346 1.15216</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_022</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -57.2508 2.58791 -2.75692</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_023</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.4545 2.58791 -13.4514</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>fire_024</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -51.8562 2.58791 -24.7915</transform>
+		<particles>fog</particles>
+	</obj>
+	<obj>
+		<name>volume_light017</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.8994 1.02477 0.997296</transform>
+		<model>
+			<mesh>volume_light017</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 3.57628e-007 0.75 0.75 -3.57628e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light018</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -45.3287 1.92912 4.43449</transform>
+		<model>
+			<mesh>volume_light018</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light019</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -44.179 1.92912 -0.465958</transform>
+		<model>
+			<mesh>volume_light019</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 3.8743e-007 0.75 0.75 -3.8743e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light020</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.8806 2.34312 -1.84894</transform>
+		<model>
+			<mesh>volume_light020</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 3.57628e-007 0.75 0.75 -3.57628e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light021</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.1833 2.25857 3.28817</transform>
+		<model>
+			<mesh>volume_light021</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light022</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.68062 -0.449845 38.4105</transform>
+		<model>
+			<mesh>volume_light022</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light023</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.75972 -0.449845 34.4957</transform>
+		<model>
+			<mesh>volume_light023</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light024</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.2184 1.09372 19.6868</transform>
+		<model>
+			<mesh>volume_light024</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light025</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -18.908 1.17014 20.2989</transform>
+		<model>
+			<mesh>volume_light025</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>txu_g003</name>
+		<type>DEFAULT</type>
+		<transform>-0.34202 0.0 0.939693 0.0 1.0 0.0 -0.939693 0.0 -0.34202 -38.6331 0.824036 3.75113</transform>
+	</obj>
+	<obj>
+		<name>colision_ban001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -60.9606 3.28018 -14.8298</transform>
+		<model>
+			<mesh>colision_ban001</mesh>
+			<visible>false</visible>
+			<aabb>-20.4401 -4.34421 19.637 20.4401 4.3442 -19.637</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -36.4862 0.463334 -3.08263</transform>
+		<model>
+			<mesh>colision_ban002</mesh>
+			<visible>false</visible>
+			<aabb>-4.56994 -1.42773 4.79987 4.56995 1.42773 -4.79987</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -42.2388 0.463334 14.1807</transform>
+		<model>
+			<mesh>colision_ban003</mesh>
+			<visible>false</visible>
+			<aabb>-4.77349 -1.42773 9.24776 4.77349 1.42773 -9.24776</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -24.5563 -0.220716 7.5017</transform>
+		<model>
+			<mesh>colision_ban004</mesh>
+			<visible>false</visible>
+			<aabb>-3.67939 -0.74368 2.57368 3.67939 0.74368 -2.57368</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -10.5876 -0.528822 18.0297</transform>
+		<model>
+			<mesh>colision_ban005</mesh>
+			<visible>false</visible>
+			<aabb>-15.7719 -2.34099 4.43949 15.7719 2.34099 -4.43949</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.33546 -0.528822 5.66296</transform>
+		<model>
+			<mesh>colision_ban006</mesh>
+			<visible>false</visible>
+			<aabb>-13.5891 -2.34099 8.01474 13.5891 2.34099 -8.01474</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -12.4504 1.8987 11.6825</transform>
+		<model>
+			<mesh>colision_ban007</mesh>
+			<visible>false</visible>
+			<aabb>-5.55664 -2.8631 3.64314 5.55664 2.8631 -3.64314</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 13.2303 -1.43171 23.0172</transform>
+		<model>
+			<mesh>colision_ban008</mesh>
+			<visible>false</visible>
+			<aabb>-8.04598 -1.4381 10.6055 8.04598 1.4381 -10.6055</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban009</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 1.16712 3.02036 14.2436</transform>
+		<model>
+			<mesh>colision_ban009</mesh>
+			<visible>false</visible>
+			<aabb>-5.93976 -0.874874 4.83349 5.93976 0.874874 -4.83349</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 11.5396 -1.94278 38.0578</transform>
+		<model>
+			<mesh>colision_ban010</mesh>
+			<visible>false</visible>
+			<aabb>-4.54511 -1.94916 4.49642 4.54511 1.94916 -4.49641</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.90718 -1.43171 36.773</transform>
+		<model>
+			<mesh>colision_ban011</mesh>
+			<visible>false</visible>
+			<aabb>-2.0037 -4.07583 3.25558 2.0037 4.07583 -3.25558</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -64.7746 7.21186 8.86311</transform>
+		<model>
+			<mesh>colision_shadow001</mesh>
+			<visible>false</visible>
+			<aabb>-30.513 -17.5268 39.7629 30.513 17.5268 -39.7629</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.1881 3.67473 -12.8927</transform>
+		<model>
+			<mesh>colision_shadow002</mesh>
+			<visible>false</visible>
+			<aabb>-6.86199 -2.5252 15.6686 6.862 2.5252 -15.6686</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.6902 0.299773 0.764622</transform>
+		<model>
+			<mesh>colision_shadow003</mesh>
+			<visible>false</visible>
+			<aabb>-9.4882 -1.13906 5.05481 9.4882 1.13906 -5.05481</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>stone</steps>
+	</obj>
+	<obj>
+		<name>colision_shadow004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.6229 -0.51657 10.5801</transform>
+		<model>
+			<mesh>colision_shadow004</mesh>
+			<visible>false</visible>
+			<aabb>-21.8531 -0.300092 23.011 21.8531 0.300092 -23.011</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>grass</steps>
+	</obj>
+	<obj>
+		<name>colision_shadow005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.1372 4.12568 7.80461</transform>
+		<model>
+			<mesh>colision_shadow005</mesh>
+			<visible>false</visible>
+			<aabb>-20.8751 -5.0901 16.0094 20.8751 5.0901 -16.0094</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -29.2141 1.38307 6.88971</transform>
+		<model>
+			<mesh>colision_shadow006</mesh>
+			<visible>false</visible>
+			<aabb>-5.60617 -2.34746 11.603 5.60617 2.34746 -11.603</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -17.9457 3.21366 9.00808</transform>
+		<model>
+			<mesh>colision_shadow007</mesh>
+			<visible>false</visible>
+			<aabb>-5.34006 -4.17806 6.56948 5.34006 4.17806 -6.56948</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.6131 1.89869 11.4673</transform>
+		<model>
+			<mesh>colision_shadow008</mesh>
+			<visible>false</visible>
+			<aabb>-5.76478 -2.86311 11.5583 5.76478 2.86311 -11.5583</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow009</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.64472 2.36659 15.4433</transform>
+		<model>
+			<mesh>colision_shadow009</mesh>
+			<visible>false</visible>
+			<aabb>-1.46216 -0.221106 3.63372 1.46216 0.221106 -3.63372</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>volume_light026</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.4886 1.21427 -0.076149</transform>
+		<model>
+			<mesh>volume_light026</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 3.8743e-007 0.75 0.75 -3.8743e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light027</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.7366 1.21427 -0.724489</transform>
+		<model>
+			<mesh>volume_light027</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.749999 -0.75 3.57628e-007 0.75 0.75 -3.57628e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light028</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.2547 0.831923 0.183956</transform>
+		<model>
+			<mesh>volume_light028</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 3.8743e-007 0.75 0.75 -3.8743e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>volume_light029</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.9819 0.831923 3.02413</transform>
+		<model>
+			<mesh>volume_light029</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>fire_025</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.1359 -0.395065 26.8434</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_026</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.51 -0.395065 28.0927</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_027</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.52006 0.212136 17.1916</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_028</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.370743 0.212136 10.0195</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_029</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.01973 1.22191 16.1008</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_030</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -4.87041 1.22191 8.9287</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_031</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.4886 1.21427 -0.076149</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_032</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.7366 1.21427 -0.724489</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_033</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -18.8622 1.11317 20.2376</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_034</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.1502 1.11317 19.6753</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_037</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.9819 0.831923 3.02413</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_038</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.2547 0.831923 0.183956</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_039</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.3421 1.30523 7.1734</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_040</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3247 1.33987 6.44259</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_041</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -37.9435 1.33987 1.06588</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_042</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -45.3827 1.93381 4.66059</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_043</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -44.0854 1.93381 -0.573021</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_044</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.8584 2.1762 -1.85457</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_045</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.203 2.1762 3.33162</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_048</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -57.5077 3.53921 -8.87664</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_049</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -53.1392 3.53921 -7.73477</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_050</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -55.1263 3.51432 -18.1575</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_051</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.851 3.51432 -16.9718</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_052</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -52.5405 3.51432 -27.5373</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_053</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.2154 3.51432 -26.2413</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>volume_light032</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.3333 1.28151 7.218</transform>
+		<model>
+			<mesh>volume_light032</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>mountain_1</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -76.1143 16.6898 -68.5735</transform>
+		<model>
+			<mesh>mountain_1</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_1_m</mask>
+				</mix>
+				<lightmap>c_mountain_1_l</lightmap>
+				<normalmap>mountain1_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-26.5869 -14.0407 34.6807 26.5869 14.0407 -34.6807</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_3</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -28.4445 -1.99293 -34.2954</transform>
+		<model>
+			<mesh>mountain_3</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_3_m</mask>
+				</mix>
+				<lightmap>c_mountain_3_l</lightmap>
+				<normalmap>mountain3_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-11.9431 -6.40743 11.2497 11.9431 6.40743 -11.2497</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -66.0043 -6.70856 -27.7288</transform>
+		<model>
+			<mesh>mountain_4</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-13.1844 -11.0037 12.3969 13.1844 11.0037 -12.3969</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_2</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -131.242 14.9263 -32.1083</transform>
+		<model>
+			<mesh>mountain_2</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_2_m</mask>
+				</mix>
+				<lightmap>c_mountain_2_l</lightmap>
+				<normalmap>mountain2_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-49.3419 -11.7629 32.5181 49.3419 11.7629 -32.5181</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>plants</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 1.74846e-007 0.0 1.0 0.0 -1.74846e-007 0.0 1.0 -47.5721 3.07665 8.24652</transform>
+		<model>
+			<mesh>plants</mesh>
+			<mat>
+				<diffuse>tree_branch1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.69399 -3.47376 6.58765 5.694 3.47376 -6.58765</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>pedestal</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -1.4535 -1.23996 7.9798</transform>
+		<model>
+			<mesh>pedestal</mesh>
+			<mat>
+				<diffuse>ground_1</diffuse>
+				<lightmap>c_pedestal_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-46.1344 -1.74321 36.2613 46.1344 1.74321 -36.2613</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4_1</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 44.0075 5.08416 -9.84991</transform>
+		<model>
+			<mesh>mountain_4_1</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-45.6841 -17.2237 25.3189 45.6841 17.2237 -25.3189</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 29.0657 5.90639 50.6387</transform>
+		<model>
+			<mesh>mountain_4_002</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-47.419 -19.0445 22.3814 47.419 19.0445 -22.3814</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -64.7746 7.26664 8.86311</transform>
+		<model>
+			<mesh>mountain_4_003</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-30.513 -17.5816 39.7629 30.513 17.5816 -39.7629</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -44.9482 3.87575 -52.7551</transform>
+		<model>
+			<mesh>mountain_4_004</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-44.871 -16.872 23.1084 44.871 16.872 -23.1084</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>mountain_4_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -12.038 -1.85479 44.9277</transform>
+		<model>
+			<mesh>mountain_4_005</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas</diffuse>
+					<diffuse2>cesped1</diffuse2>
+					<mask>mountain_4_m</mask>
+				</mix>
+				<lightmap>c_mountain_4_l</lightmap>
+				<normalmap>mountain4_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-9.44431 -8.35206 13.2947 9.44431 8.01359 -13.2947</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -43.5857 3.76614 -2.45984</transform>
+		<model>
+			<mesh>assets_001</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>barril</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-9.65235 -5.50582 21.5381 9.65235 5.50582 -21.5381</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 27.4473 -1.22591 -0.170243</transform>
+		<model>
+			<mesh>assets002_001</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-16.6021 -1.53374 7.33683 16.6021 1.53374 -7.33683</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 37.4369 -1.17811 20.3541</transform>
+		<model>
+			<mesh>assets002_002</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.01475 -1.59071 19.2149 7.01475 1.59071 -19.2149</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 15.9149 -1.83503 20.9542</transform>
+		<model>
+			<mesh>assets002_003</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.15654 -1.43743 7.39829 6.15654 1.43743 -7.39828</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 22.0171 -0.583196 39.1226</transform>
+		<model>
+			<mesh>assets002_004</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera2_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-8.53577 -2.18163 4.75801 8.53576 2.18163 -4.75801</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.1694 -1.31257 34.4367</transform>
+		<model>
+			<mesh>assets002_005</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>barril</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.57659 -1.25278 0.658993 1.57659 1.25278 -0.658993</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 22.9111 -0.244545 36.418</transform>
+		<model>
+			<mesh>assets002_006</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-11.1578 -0.297075 3.66248 11.1578 0.297075 -3.66248</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets002_007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.38433 -1.02272 38.1187</transform>
+		<model>
+			<mesh>assets002_007</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_assets002_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.75622 -1.55131 6.19958 7.75622 1.55131 -6.19958</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>god</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.68131 0.577675 35.9218</transform>
+		<model>
+			<mesh>god</mesh>
+			<mat>
+				<diffuse>god_d</diffuse>
+				<lightmap>c_god_l</lightmap>
+				<normalmap>god_n</normalmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.580805 -2.52882 1.19971 0.580805 2.52882 -1.19971</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -14.9042 0.498791 -11.6013</transform>
+		<model>
+			<mesh>lapidas_box001</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-14.7009 -3.45924 14.0814 14.7009 3.45924 -14.0814</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.73257 -1.10914 -0.329594</transform>
+		<model>
+			<mesh>lapidas_box002</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-10.7599 -2.62651 10.4283 10.7599 2.62651 -10.4283</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 29.5294 -0.700475 7.81243</transform>
+		<model>
+			<mesh>lapidas_box003</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-10.0993 -2.43622 9.38969 10.0993 2.43622 -9.38969</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 24.4132 -0.722451 31.8122</transform>
+		<model>
+			<mesh>lapidas_box004</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.79977 -2.08117 5.83315 7.79977 2.08117 -5.83315</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas_box005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -3.47448 -0.534119 28.0915</transform>
+		<model>
+			<mesh>lapidas_box005</mesh>
+			<mat>
+				<diffuse>rocas_2</diffuse>
+				<lightmap>c_lapidas_box_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-10.7954 -3.16748 8.1345 10.7954 3.16748 -8.1345</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>pos_2</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 12.4017 -1.58845 37.4084</transform>
+	</obj>
+	<obj>
+		<name>g001</name>
+		<type>DEFAULT</type>
+		<transform>0.703795 0.0 0.710403 0.0 1.0 0.0 -0.710403 0.0 0.703795 15.084 -0.565886 25.2851</transform>
+	</obj>
+	<obj>
+		<name>trigger003</name>
+		<type>TRIGGER</type>
+			<trigger_radius>3.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger003()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 11.6432 -1.09923 30.2701</transform>
+	</obj>
+	<obj>
+		<name>trigger004</name>
+		<type>TRIGGER</type>
+			<trigger_radius>6.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger004()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 15.2174 -1.09923 15.6421</transform>
+	</obj>
+	<obj>
+		<name>rc001</name>
+		<type>DEFAULT</type>
+		<transform>-0.26333 0.0 0.964706 0.0 1.0 0.0 -0.964706 0.0 -0.26333 7.91342 -1.55537 36.9688</transform>
+	</obj>
+	<obj>
+		<name>g002</name>
+		<type>DEFAULT</type>
+		<transform>0.999989 0.0 0.00467248 0.0 1.0 0.0 -0.00467248 0.0 0.999989 14.5577 -1.01504 15.2141</transform>
+	</obj>
+	<obj>
+		<name>trigger007</name>
+		<type>TRIGGER</type>
+			<trigger_radius>2.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger007()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -27.0168 0.242702 1.11118</transform>
+	</obj>
+	<obj>
+		<name>trigger009</name>
+		<type>TRIGGER</type>
+			<trigger_radius>5.0</trigger_radius>
+			<trigger_type>ONFIRSTENTER</trigger_type>
+			<trigger_command>trigger009()</trigger_command>
+		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -70.1857 4.72729 -29.6186</transform>
+	</obj>
+	<obj>
+		<name>t001</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 11.0928 -2.30686 38.7934</transform>
+		<model>
+			<mesh>t001</mesh>
+			<mat>
+				<diffuse>T1</diffuse>
+				<emissive>T1</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t002</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 8.99891 -1.36192 33.8634</transform>
+		<model>
+			<mesh>t002</mesh>
+			<mat>
+				<diffuse>T2</diffuse>
+				<emissive>T2</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 7.62939e-006 0.75 1.50002 9.34601e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t003</name>
+		<type>TUTORIAL</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.99261 -1.46709 33.8547</transform>
+		<model>
+			<mesh>t003</mesh>
+			<mat>
+				<diffuse>T3</diffuse>
+				<emissive>T3</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.226247 -0.437076 0.844364 0.226247 0.437076 -0.844364</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t004</name>
+		<type>TUTORIAL</type>
+		<transform>0.965926 0.0 0.258819 0.0 1.0 0.0 -0.258819 0.0 0.965926 13.5133 -2.57779 22.733</transform>
+		<model>
+			<mesh>t004</mesh>
+			<mat>
+				<diffuse>T4</diffuse>
+				<emissive>T4</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.29904 0.0 1.5 1.29904 9.98974e-005 -1.5</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t005</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 9.57255 -2.57779 16.3432</transform>
+		<model>
+			<mesh>t005</mesh>
+			<mat>
+				<diffuse>T5</diffuse>
+				<emissive>T5</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t006</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 5.21989 -2.57779 15.3821</transform>
+		<model>
+			<mesh>t006</mesh>
+			<mat>
+				<diffuse>T6</diffuse>
+				<emissive>T6</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.64952 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t009</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -15.2994 1.9319 9.73502</transform>
+		<model>
+			<mesh>t009</mesh>
+			<mat>
+				<diffuse>T9</diffuse>
+				<emissive>T9</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 5.72205e-006 0.75 1.50002 9.15527e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t010</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -30.4832 0.948156 2.75685</transform>
+		<model>
+			<mesh>t010</mesh>
+			<mat>
+				<diffuse>T10</diffuse>
+				<emissive>T10</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 7.62939e-006 0.75 1.50002 9.34601e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t011</name>
+		<type>TUTORIAL</type>
+		<transform>0.836516 0.5 0.224144 0.430682 -0.852869 0.295174 0.338752 -0.150383 -0.92878 -53.0926 5.04175 -20.7787</transform>
+		<model>
+			<mesh>t011</mesh>
+			<mat>
+				<diffuse>T11</diffuse>
+				<emissive>T11</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.4621 0.390953 -1.34063 1.4621 -0.39085 1.34063</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>tunks</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -47.6591 2.19346 8.36822</transform>
+		<model>
+			<mesh>tunks</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.83949 -2.92853 5.61907 4.83949 2.92853 -5.61907</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>volume_light033</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -46.7302 2.35788 -6.07098</transform>
+		<model>
+			<mesh>volume_light033</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 4.76837e-007 0.75 0.75 -4.76837e-007</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>fire_054</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -46.6924 2.38136 -6.04427</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>volume_light034</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.5657 1.92795 12.8738</transform>
+		<model>
+			<mesh>volume_light034</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>fire_055</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -48.5279 1.95142 12.9005</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>lapidas001_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 7.83295 0.302204 28.8108</transform>
+		<model>
+			<mesh>lapidas001_001</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.71428 -3.25115 11.1143 4.71427 3.25115 -11.1144</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>bamboo</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -32.2823 0.944368 11.2402</transform>
+		<model>
+			<mesh>bamboo</mesh>
+			<mat>
+				<diffuse>bamboo</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.3978 -1.58915 2.52671 1.3978 1.58915 -2.52671</aabb>
+		<no_cull>true</no_cull>
+		</model>
+	</obj>
+	<obj>
+		<name>fire_061</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -19.9789 0.452245 17.0205</transform>
+		<sound>grillos</sound>
+		<particles>fireflies</particles>
+	</obj>
+	<obj>
+		<name>fire_063</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 11.6533 -1.92591 17.223</transform>
+		<sound>grillos</sound>
+		<particles>fireflies</particles>
+	</obj>
+	<obj>
+		<name>fire_064</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.0113 -0.449845 37.3276</transform>
+		<sound>grillos</sound>
+		<particles>fireflies</particles>
+	</obj>
+	<obj>
+		<name>fire_067</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -41.966 1.0634 2.8049</transform>
+		<particles>leaves</particles>
+	</obj>
+	<obj>
+		<name>fire_068</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -50.7864 3.41278 0.253865</transform>
+		<particles>leaves</particles>
+	</obj>
+	<obj>
+		<name>fire_069</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.7486 0.728549 12.5229</transform>
+		<particles>leaves</particles>
+	</obj>
+	<obj>
+		<name>fire_070</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -23.7679 0.728549 0.169699</transform>
+		<particles>leaves</particles>
+	</obj>
+	<obj>
+		<name>assets_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -67.0494 5.81678 -28.1917</transform>
+		<model>
+			<mesh>assets_002</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>scairs</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>ground_1</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-10.8491 -4.61761 7.0296 10.8491 4.61761 -7.0296</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.0471 1.48739 -13.8945</transform>
+		<model>
+			<mesh>assets_003</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.42098 -6.61903 16.7822 7.42099 6.61903 -16.7822</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>assets_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -51.3584 0.835458 -4.04937</transform>
+		<model>
+			<mesh>assets_004</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>scairs</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>ground_1</diffuse>
+				<lightmap>c_assets_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-9.89189 -5.9615 13.0797 9.89189 5.9615 -13.0797</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.3269 1.54615 7.13984</transform>
+		<model>
+			<mesh>house_001</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera2_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.73753 -2.51694 11.2092 5.73753 2.51694 -11.2092</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -44.5163 0.689954 16.4434</transform>
+		<model>
+			<mesh>house_002</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.07415 -1.32523 22.1395 6.07414 1.32523 -22.1395</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.4055 0.372874 24.9475</transform>
+		<model>
+			<mesh>house_003</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-8.25274 -2.00237 20.8149 8.25274 2.00237 -20.8149</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -30.8276 0.858543 6.51682</transform>
+		<model>
+			<mesh>house_004</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>door</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-13.9347 -1.56861 15.6978 13.9347 1.56861 -15.6978</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -27.3925 0.782961 6.82959</transform>
+		<model>
+			<mesh>house_005</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>door</diffuse>
+				<lightmap>c_house_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.03008 -1.53253 12.4548 4.03008 1.53253 -12.4548</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>look_4</name>
+		<type>DEFAULT</type>
+		<transform>-0.222256 0.429222 0.875426 0.0789901 0.902859 -0.422619 -0.971783 -0.0247793 -0.23457 5.97969 1.14248 36.0662</transform>
+	</obj>
+	<obj>
+		<name>pos_4</name>
+		<type>DEFAULT</type>
+		<transform>-0.900622 0.248777 0.356355 0.344712 -0.0904486 0.934341 0.264675 0.964328 -0.00429654 9.66486 -1.45852 37.2503</transform>
+	</obj>
+	<obj>
+		<name>pos_3</name>
+		<type>DEFAULT</type>
+		<transform>0.327321 0.355655 0.875426 0.875426 0.234569 -0.422619 -0.355654 0.904703 -0.23457 9.65152 0.131627 37.1842</transform>
+	</obj>
+	<obj>
+		<name>look_3</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -5.19818 2.88276 33.1079</transform>
+	</obj>
+	<obj>
+		<name>pos_5</name>
+		<type>DEFAULT</type>
+		<transform>0.519048 0.168077 0.838057 0.799869 -0.441165 -0.406918 0.301328 0.881546 -0.363425 10.3638 -1.82388 36.2401</transform>
+	</obj>
+	<obj>
+		<name>look_5</name>
+		<type>DEFAULT</type>
+		<transform>0.222256 -0.429222 0.875426 -0.0789902 -0.902859 -0.422619 0.971783 0.0247793 -0.23457 8.00419 -1.20033 36.1768</transform>
+	</obj>
+	<obj>
+		<name>look_7</name>
+		<type>DEFAULT</type>
+		<transform>0.222256 -0.429222 0.875426 -0.0789902 -0.902859 -0.422619 0.971783 0.0247793 -0.23457 -74.7607 -3.25826 -24.2332</transform>
+	</obj>
+	<obj>
+		<name>god ray014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.9061 2.86566 -20.4297</transform>
+		<model>
+			<mesh>god ray014</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.9576 2.82424 -19.4753</transform>
+		<model>
+			<mesh>god ray015</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.4023 2.81388 -21.5142</transform>
+		<model>
+			<mesh>god ray016</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42205 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray017</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -36.067 2.86566 -4.87204</transform>
+		<model>
+			<mesh>god ray017</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray018</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -36.1185 2.82424 -3.91759</transform>
+		<model>
+			<mesh>god ray018</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray019</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -35.5631 2.81388 -5.95652</transform>
+		<model>
+			<mesh>god ray019</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42205 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray020</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -22.8809 2.86566 -1.33087</transform>
+		<model>
+			<mesh>god ray020</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray021</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -22.9324 2.82424 -0.376416</transform>
+		<model>
+			<mesh>god ray021</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray022</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -22.3771 2.81388 -2.41535</transform>
+		<model>
+			<mesh>god ray022</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42204 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray023</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.0218 2.82227 15.0296</transform>
+		<model>
+			<mesh>god ray023</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray024</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.0733 2.78086 15.984</transform>
+		<model>
+			<mesh>god ray024</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray025</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -30.518 2.77049 13.9451</transform>
+		<model>
+			<mesh>god ray025</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42204 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray026</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.49655 1.49827 40.5417</transform>
+		<model>
+			<mesh>god ray026</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray027</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.44505 1.45686 41.4962</transform>
+		<model>
+			<mesh>god ray027</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray028</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.0004 1.44649 39.4572</transform>
+		<model>
+			<mesh>god ray028</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42204 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray029</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 16.5737 0.777482 16.5163</transform>
+		<model>
+			<mesh>god ray029</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.99208 -4.33893 2.73619 3.99207 4.33893 -2.73619</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray030</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 16.5222 0.736068 17.4707</transform>
+		<model>
+			<mesh>god ray030</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.29528 -2.60536 1.98784 2.29528 2.60536 -1.98784</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god ray031</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 17.0776 0.725703 15.4318</transform>
+		<model>
+			<mesh>god ray031</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.42204 -2.63249 1.66008 2.42205 2.63249 -1.66008</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>raven</name>
+		<type>DEFAULT</type>
+		<transform>0.5 0.0 -0.866025 0.0 1.0 0.0 0.866025 0.0 0.5 4.85684 1.82931 35.1551</transform>
+	</obj>
+	<obj>
+		<name>lapidas001_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -19.0678 2.69128 -5.08075</transform>
+		<model>
+			<mesh>lapidas001_002</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.25784 -3.5212 8.01144 5.25784 3.5212 -8.01144</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.2952 2.58637 21.6929</transform>
+		<model>
+			<mesh>lapidas001_003</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.06193 -3.41628 8.60516 5.06193 3.41628 -8.60516</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.312 0.461498 5.18588</transform>
+		<model>
+			<mesh>lapidas001_004</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.9602 -3.42371 9.75212 7.9602 3.42371 -9.75212</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 30.6439 0.469687 16.9698</transform>
+		<model>
+			<mesh>lapidas001_005</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.19028 -3.44601 8.85412 6.19028 3.44601 -8.85412</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 16.6894 0.177116 32.2492</transform>
+		<model>
+			<mesh>lapidas001_006</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.15281 -3.37842 10.802 4.15281 3.37842 -10.802</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>colision_shadow010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -35.896 2.13265 11.9427</transform>
+		<model>
+			<mesh>colision_shadow010</mesh>
+			<visible>false</visible>
+			<aabb>-8.28534 -3.01123 6.159 8.28534 3.01123 -6.159</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -31.1809 4.26546 -3.49887</transform>
+		<model>
+			<mesh>colision_shadow011</mesh>
+			<visible>false</visible>
+			<aabb>-9.16771 -2.56503 4.0168 9.16771 2.2337 -4.0168</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow012</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.75323 -2.17408 27.8132</transform>
+		<model>
+			<mesh>colision_shadow012</mesh>
+			<visible>false</visible>
+			<aabb>-12.2784 -0.552831 16.5457 12.2784 0.552831 -16.5457</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>grass</steps>
+	</obj>
+	<obj>
+		<name>colision_shadow013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.03004 0.0727925 15.2162</transform>
+		<model>
+			<mesh>colision_shadow013</mesh>
+			<visible>false</visible>
+			<aabb>-4.5118 -3.10894 4.6564 4.5118 3.10894 -4.6564</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 13.7902 0.151369 19.6636</transform>
+		<model>
+			<mesh>colision_shadow014</mesh>
+			<visible>false</visible>
+			<aabb>-3.80744 -3.18751 6.13775 3.80744 3.18751 -6.13775</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.4636 -1.84071 37.4573</transform>
+		<model>
+			<mesh>colision_shadow015</mesh>
+			<visible>false</visible>
+			<aabb>-8.45515 -0.818236 6.17633 8.45515 0.818236 -6.17634</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.39812 -0.241208 41.5092</transform>
+		<model>
+			<mesh>colision_shadow016</mesh>
+			<visible>false</visible>
+			<aabb>-7.75569 -0.221106 2.76566 7.75569 0.221106 -2.76566</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow017</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.48583 1.86391 40.0137</transform>
+		<model>
+			<mesh>colision_shadow017</mesh>
+			<visible>false</visible>
+			<aabb>-0.749333 -1.47497 1.94597 0.749332 1.47497 -1.94597</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow018</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.27565 -0.241208 35.512</transform>
+		<model>
+			<mesh>colision_shadow018</mesh>
+			<visible>false</visible>
+			<aabb>-2.03666 -0.221106 5.03502 2.03666 0.221106 -5.03502</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow019</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.59478 -0.241208 32.0461</transform>
+		<model>
+			<mesh>colision_shadow019</mesh>
+			<visible>false</visible>
+			<aabb>-2.77436 -0.221106 1.43092 2.77436 0.221106 -1.43092</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow020</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.4954 -0.241208 34.163</transform>
+		<model>
+			<mesh>colision_shadow020</mesh>
+			<visible>false</visible>
+			<aabb>-2.77435 -0.221106 1.43092 2.77435 0.221106 -1.43092</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow021</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.80646 -1.56117 35.8508</transform>
+		<model>
+			<mesh>colision_shadow021</mesh>
+			<visible>false</visible>
+			<aabb>-0.491883 -1.47497 0.985096 0.491883 1.47497 -0.985096</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow022</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.74594 1.36568 35.8838</transform>
+		<model>
+			<mesh>colision_shadow022</mesh>
+			<visible>false</visible>
+			<aabb>-0.491883 -1.47497 0.985096 0.491883 1.47497 -0.985096</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow023</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 7.17378 -0.241208 40.1625</transform>
+		<model>
+			<mesh>colision_shadow023</mesh>
+			<visible>false</visible>
+			<aabb>-1.13755 -0.221106 1.67951 1.13755 0.221106 -1.67951</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow024</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.6529 0.216837 33.1334</transform>
+		<model>
+			<mesh>colision_shadow024</mesh>
+			<visible>false</visible>
+			<aabb>-1.95955 -0.221106 1.21259 1.95955 0.221106 -1.21259</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow025</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.97485 -0.241208 33.4409</transform>
+		<model>
+			<mesh>colision_shadow025</mesh>
+			<visible>false</visible>
+			<aabb>-1.13755 -0.221106 1.67951 1.13755 0.221106 -1.67951</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow026</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.72386 -1.56117 28.8337</transform>
+		<model>
+			<mesh>colision_shadow026</mesh>
+			<visible>false</visible>
+			<aabb>-0.491882 -1.47497 0.985096 0.491882 1.47497 -0.985096</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow027</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.62372 -0.0249128 31.0959</transform>
+		<model>
+			<mesh>colision_shadow027</mesh>
+			<visible>false</visible>
+			<aabb>-1.03286 -3.01123 1.03122 1.03286 3.01123 -1.03122</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow028</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.94572 -1.87551 33.5237</transform>
+		<model>
+			<mesh>colision_shadow028</mesh>
+			<visible>false</visible>
+			<aabb>-0.416492 -0.815525 1.2339 0.416493 0.815525 -1.2339</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_shadow029</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -64.5446 8.96013 -28.1755</transform>
+		<model>
+			<mesh>colision_shadow029</mesh>
+			<visible>false</visible>
+			<aabb>-8.42351 -1.20841 5.29528 8.42351 1.20841 -5.29528</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 13.5578 -2.63475 14.002</transform>
+		<model>
+			<mesh>colision_ban013</mesh>
+			<visible>false</visible>
+			<aabb>-4.74691 -0.635351 1.81757 4.74691 0.635351 -1.81758</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -10.1708 -0.487163 3.97833</transform>
+		<model>
+			<mesh>colision_ban014</mesh>
+			<visible>false</visible>
+			<aabb>-2.41807 -0.635337 4.40042 2.41807 0.635337 -4.40042</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -14.4849 -0.487163 19.1779</transform>
+		<model>
+			<mesh>colision_ban015</mesh>
+			<visible>false</visible>
+			<aabb>-3.69579 -0.635337 2.73803 3.69579 0.635337 -2.73803</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.8993 -0.40811 -2.33449</transform>
+		<model>
+			<mesh>colision_ban016</mesh>
+			<visible>false</visible>
+			<aabb>-4.36903 -0.714389 1.5034 4.36903 0.714389 -1.50341</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ban017</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.504 -0.485631 10.8307</transform>
+		<model>
+			<mesh>colision_ban017</mesh>
+			<visible>false</visible>
+			<aabb>-9.37545 -0.79191 8.31808 9.37545 0.791911 -8.31808</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ia001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 13.9797 -1.43171 21.4543</transform>
+		<model>
+			<mesh>colision_ia001</mesh>
+			<visible>false</visible>
+			<aabb>-1.53444 -1.4381 0.45598 1.53444 1.4381 -0.45598</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>INVISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>colision_ia002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -28.4576 0.00154936 10.6695</transform>
+		<model>
+			<mesh>colision_ia002</mesh>
+			<visible>false</visible>
+			<aabb>-2.15196 -1.93302 7.86396 2.15196 1.93302 -7.86396</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>FORBIDDEN</col_type>
+	</obj>
+	<obj>
+		<name>colision_ia003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -24.9699 -0.493371 -2.34164</transform>
+		<model>
+			<mesh>colision_ia003</mesh>
+			<visible>false</visible>
+			<aabb>-0.717739 -1.4381 2.51134 0.717739 1.4381 -2.51134</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>INVISIBLE_GEOM</col_type>
+	</obj>
+	<obj>
+		<name>look_1</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 0.996195 -0.0871557 0.0 0.0871557 0.996195 -12.0461 6.13402 28.3585</transform>
+	</obj>
+	<obj>
+		<name>pos_7</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -60.7761 10.7057 -30.0312</transform>
+	</obj>
+	<obj>
+		<name>colision_shadow_p</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -1.9824 -1.80723 13.5026</transform>
+		<model>
+			<mesh>colision_shadow_p</mesh>
+			<visible>false</visible>
+			<aabb>-9.48819 -1.17413 5.05481 9.48819 1.17413 -5.05481</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>stone</steps>
+	</obj>
+	<obj>
+		<name>colision_shadow_p001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -63.1379 1.95125 -27.5108</transform>
+		<model>
+			<mesh>colision_shadow_p001</mesh>
+			<visible>false</visible>
+			<aabb>-10.1395 -1.35629 5.06447 10.1395 1.35629 -5.06447</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>stone</steps>
+	</obj>
+	<obj>
+		<name>colision_shadow030</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -54.1899 1.36652 -12.9312</transform>
+		<model>
+			<mesh>colision_shadow030</mesh>
+			<visible>false</visible>
+			<aabb>-6.76785 -0.0736027 15.1487 6.76786 0.0736027 -15.1487</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+		<steps>wood</steps>
+	</obj>
+	<obj>
+		<name>plants001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 10.4548 0.903216 38.7547</transform>
+		<model>
+			<mesh>plants001</mesh>
+			<mat>
+				<diffuse>tree_branch1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.79628 -3.42359 4.32826 4.79628 3.42358 -4.32826</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.8576 0.562521 17.1363</transform>
+		<model>
+			<mesh>plants002</mesh>
+			<mat>
+				<diffuse>flowers1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.0198 -3.38728 4.07252 5.0198 -2.3063 -3.50523</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -12.1183 -0.187648 2.25166</transform>
+		<model>
+			<mesh>plants003</mesh>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.57449 -0.384949 1.89746 2.57449 0.384949 -1.38083</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -16.6658 -0.3159 17.5325</transform>
+		<model>
+			<mesh>plants004</mesh>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.61921 -0.384949 1.63914 1.61921 0.384949 -1.63914</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -32.6131 2.42625 11.4993</transform>
+		<model>
+			<mesh>plants005</mesh>
+			<mat>
+				<diffuse>tree_branch1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>tree_branch2</diffuse>
+				<lightmap>tree_branch2_i</lightmap>
+				<emissive>tree_branch2_i</emissive>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>flowers1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-9.78663 -3.19491 7.37892 4.39428 3.19491 -10.0796</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.6231 2.7838 -2.1945</transform>
+		<model>
+			<mesh>plants006</mesh>
+			<mat>
+				<diffuse>tree_branch1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.67336 -3.41412 3.61097 4.67337 3.41412 -3.61098</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -24.8844 -0.240259 14.6279</transform>
+		<model>
+			<mesh>plants007</mesh>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.65894 -0.384948 1.68975 1.65895 0.384948 -1.68976</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>plants008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -43.1763 3.37576 -6.45684</transform>
+		<model>
+			<mesh>plants008</mesh>
+			<mat>
+				<diffuse>tree_branch1</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>grass_d</diffuse>
+				<lightmap>c_plants_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-9.08168 -3.47376 4.9155 9.08168 3.47376 -4.91551</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>tunks001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 16.1332 -0.185311 15.4561</transform>
+		<model>
+			<mesh>tunks001</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.60933 -3.06375 1.36769 1.60933 3.06375 -1.36769</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>tunks002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.23855 0.191694 40.082</transform>
+		<model>
+			<mesh>tunks002</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.54029 -3.06375 1.8722 1.54029 3.06375 -1.8722</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>tunks003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.0983 1.76787 -2.24147</transform>
+		<model>
+			<mesh>tunks003</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.66277 -3.305 2.53942 2.66277 3.305 -2.53943</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>tunks004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -43.3714 2.12714 -6.16891</transform>
+		<model>
+			<mesh>tunks004</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.70235 -3.29396 3.95494 7.70235 3.29395 -3.95493</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>tunks005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -33.2315 1.47361 13.9972</transform>
+		<model>
+			<mesh>tunks005</mesh>
+			<mat>
+				<diffuse>tree_tunk</diffuse>
+				<lightmap>c_tunks_l</lightmap>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.14655 -2.71914 3.20133 3.14655 2.71914 -3.20133</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>plants009</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 14.8576 0.562521 17.1363</transform>
+		<model>
+			<mesh>plants009</mesh>
+			<mat>
+				<diffuse>tree_branch2</diffuse>
+				<lightmap>tree_branch2_i</lightmap>
+				<emissive>tree_branch2_i</emissive>
+				<material_name>tech_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.54132 -1.34701 1.31932 4.14869 3.38728 -4.07252</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		</model>
+	</obj>
+	<obj>
+		<name>fire_071</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 15.6683 -0.548161 15.6879</transform>
+		<particles>leaves</particles>
+	</obj>
+	<obj>
+		<name>clouds</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -16.7435 -24.6654 -3.94723</transform>
+		<model>
+			<mesh>clouds</mesh>
+			<mat>
+				<diffuse>clouds</diffuse>
+				<material_name>tech_fwd_clouds</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-131.532 -5.72205e-006 131.532 131.532 113.91 -131.532</aabb>
+		<forward>true</forward>
+		<before_outline>true</before_outline>
+		</model>
+	</obj>
+	<obj>
+		<name>t007</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 7.53359 -2.57779 18.975</transform>
+		<model>
+			<mesh>t007</mesh>
+			<mat>
+				<diffuse>T7</diffuse>
+				<emissive>T7</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>god_ray_002</name>
+		<type>DEFAULT</type>
+		<transform>0.34202 0.0 0.939693 0.0 1.0 0.0 -0.939693 0.0 0.34202 -36.1648 0.746557 13.6409</transform>
+		<model>
+			<mesh>god_ray_002</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>0.864191 -0.463377 1.72538 -0.780778 0.463057 -1.58874</aabb>
+		<no_cull>false</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god_ray_003</name>
+		<type>DEFAULT</type>
+		<transform>0.939693 0.0 -0.34202 0.0 1.0 0.0 0.34202 0.0 0.939693 -31.199 0.746557 -2.58804</transform>
+		<model>
+			<mesh>god_ray_003</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.6542 -0.463377 0.80941 1.73705 0.78446 -0.672326</aabb>
+		<no_cull>false</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god_ray_004</name>
+		<type>DEFAULT</type>
+		<transform>-0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 -0.34202 -22.1665 1.41938 10.987</transform>
+		<model>
+			<mesh>god_ray_004</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.664129 -0.463207 -1.45726 0.826848 0.618514 1.6011</aabb>
+		<no_cull>false</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>god_ray_005</name>
+		<type>DEFAULT</type>
+		<transform>0.34202 0.0 0.939693 0.0 1.0 0.0 -0.939693 0.0 0.34202 -14.0175 1.41938 7.07288</transform>
+		<model>
+			<mesh>god_ray_005</mesh>
+			<mat>
+				<diffuse>god_ray</diffuse>
+				<emissive>god_ray</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>0.798997 -0.463092 1.52308 -0.603157 0.618675 -1.38451</aabb>
+		<no_cull>false</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_007</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.09661 -0.26703 18.1113</transform>
+		<model>
+			<mesh>lapidas001_007</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.28273 -2.76941 3.70067 6.28273 2.76941 -3.70067</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_008</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 27.0194 0.354879 31.1576</transform>
+		<model>
+			<mesh>lapidas001_008</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.3278 -3.55619 8.0617 7.3278 3.55619 -8.0617</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_009</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 20.8797 0.644917 9.30927</transform>
+		<model>
+			<mesh>lapidas001_009</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-3.39584 -3.19617 8.90738 3.39584 3.19617 -8.90738</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_010</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 1.45002 0.166898 2.53702</transform>
+		<model>
+			<mesh>lapidas001_010</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.82523 -2.97668 10.4233 5.82523 2.97668 -10.4233</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_011</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -45.666 1.57509 -3.76163</transform>
+		<model>
+			<mesh>lapidas001_011</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.94769 -2.12035 3.37721 4.94769 2.12035 -3.37721</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_012</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -9.9862 1.53722 1.09133</transform>
+		<model>
+			<mesh>lapidas001_012</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.73162 -2.53895 9.01541 4.73162 2.53895 -9.01541</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_013</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -30.4312 2.45267 -15.4304</transform>
+		<model>
+			<mesh>lapidas001_013</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.02541 -3.28258 12.3311 7.02542 3.28258 -12.3311</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_014</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -46.1256 1.50236 7.40512</transform>
+		<model>
+			<mesh>lapidas001_014</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>name</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.4145 -2.33222 3.41295 7.41449 2.33222 -3.41295</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_015</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -12.525 1.40861 17.8193</transform>
+		<model>
+			<mesh>lapidas001_015</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-5.54588 -2.66412 3.84604 5.54588 2.66412 -3.84604</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>lapidas001_016</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -34.5671 0.432703 15.8342</transform>
+		<model>
+			<mesh>lapidas001_016</mesh>
+			<mat>
+				<mix>
+					<diffuse>rocas_2</diffuse>
+					<diffuse2>metal_d</diffuse2>
+					<mask>lapidas</mask>
+				</mix>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_lapidas001_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.75579 -1.22879 3.91249 4.7558 1.22879 -3.91249</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house003_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.785409 0.274972 14.4597</transform>
+		<model>
+			<mesh>house003_001</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>scairs</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>ground_1</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.88707 -3.13236 4.85809 7.88707 3.13236 -4.85809</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house003_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -4.98395 1.54506 12.722</transform>
+		<model>
+			<mesh>house003_002</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-4.97147 -3.42275 4.79879 4.97147 3.42275 -4.79879</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house003_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -7.77985 0.647956 4.66201</transform>
+		<model>
+			<mesh>house003_003</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.11104 -1.301 4.48483 2.11104 1.301 -4.48483</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house003_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.6612 0.496668 7.16211</transform>
+		<model>
+			<mesh>house003_004</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>madera3_d</diffuse>
+				<emissive>madera3_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-2.38655 -1.24903 5.06308 2.38655 1.24903 -5.06308</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>antorchas</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -38.6024 0.21271 3.7205</transform>
+		<model>
+			<mesh>antorchas</mesh>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.09917 -1.00585 3.10641 1.09917 1.00585 -3.10641</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 5.12964 -0.31026 -14.0006</transform>
+		<model>
+			<mesh>house004_001</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.97186 -2.37058 7.87218 7.97186 2.37058 -7.87218</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_002</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.7329 0.698474 -23.707</transform>
+		<model>
+			<mesh>house004_002</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-16.8228 -1.31091 7.30448 16.8228 1.31091 -7.30448</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_003</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.7411 0.885622 -0.000364065</transform>
+		<model>
+			<mesh>house004_003</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>door</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-7.93418 -1.54153 3.40173 7.93418 1.54153 -3.40173</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_004</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -27.4655 0.671513 -4.83032</transform>
+		<model>
+			<mesh>house004_004</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-11.439 -1.32886 3.74578 11.439 1.32886 -3.74578</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_005</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -34.7741 0.680413 -14.7321</transform>
+		<model>
+			<mesh>house004_005</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>muro</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>techo_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-6.28868 -1.32667 15.9182 6.28868 1.32667 -15.9182</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>house004_006</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -39.5219 0.161408 9.93874</transform>
+		<model>
+			<mesh>house004_006</mesh>
+			<mat>
+				<diffuse>madera_d</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>dit_wood</diffuse>
+				<lightmap>c_house004_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.43744 -0.839877 0.660795 1.43744 0.839877 -0.660795</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>fire_072</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.0852 4.75706 -30.9601</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>volume_light035</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.0852 4.58831 -30.9601</transform>
+		<model>
+			<mesh>volume_light035</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>fire_073</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.1293 4.90341 -30.8915</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>fire_074</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.095 4.74451 -27.4727</transform>
+		<sound>fuego</sound>
+		<particles>fire</particles>
+	</obj>
+	<obj>
+		<name>volume_light036</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.08 4.58831 -27.5193</transform>
+		<model>
+			<mesh>volume_light036</mesh>
+			<mat>
+				<diffuse>volume_light</diffuse>
+				<emissive>volume_light</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.75 -0.75 0.0 0.75 0.75 0.0</aabb>
+		<no_cull>true</no_cull>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<billboard>true</billboard>
+	</obj>
+	<obj>
+		<name>fire_075</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.1241 4.90341 -27.4507</transform>
+		<particles>light_dust</particles>
+	</obj>
+	<obj>
+		<name>antorchas001</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.8265 3.8988 -28.2199</transform>
+		<model>
+			<mesh>antorchas001</mesh>
+			<mat>
+				<diffuse>metal_d</diffuse>
+				<lightmap>c_house003_l</lightmap>
+				<material_name>tech_mix_lightmap</material_name>
+			</mat>
+			<mat>
+				<diffuse>farol_d</diffuse>
+				<emissive>farol_d</emissive>
+				<material_name>tech_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.587013 -1.00585 1.11975 1.09917 1.00585 -3.10641</aabb>
+		</model>
+	</obj>
+	<obj>
+		<name>fire_076</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.1241 4.90341 -27.4974</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>fire_077</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -68.0979 4.90341 -30.9558</transform>
+		<particles>smoke_fire</particles>
+	</obj>
+	<obj>
+		<name>pos_8</name>
+		<type>DEFAULT</type>
+		<transform>0.43026 0.335465 0.838057 0.902518 -0.140989 -0.406918 -0.0183501 0.931443 -0.363425 -48.2574 0.729235 11.7718</transform>
+	</obj>
+	<obj>
+		<name>pos_10</name>
+		<type>DEFAULT</type>
+		<transform>0.744126 0.335465 0.577702 0.645988 -0.140989 -0.750214 -0.170221 0.931443 -0.32162 -46.1194 1.0646 -8.02008</transform>
+	</obj>
+	<obj>
+		<name>pos_12</name>
+		<type>DEFAULT</type>
+		<transform>0.632505 0.335465 0.698141 0.766448 -0.140989 -0.626642 -0.111786 0.931443 -0.346292 -22.4076 1.0646 30.966</transform>
+	</obj>
+	<obj>
+		<name>pos_14</name>
+		<type>DEFAULT</type>
+		<transform>-0.833138 0.335465 -0.439709 -0.505901 -0.140989 0.850991 0.223484 0.931443 0.287175 -1.25031 1.37583 -0.0687757</transform>
+	</obj>
+	<obj>
+		<name>pos_16</name>
+		<type>DEFAULT</type>
+		<transform>0.864106 0.261147 -0.43026 -0.417658 -0.104987 -0.902518 -0.280862 0.959573 0.0183504 22.8443 -1.1823 6.50913</transform>
+	</obj>
+	<obj>
+		<name>pos_9</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -47.1701 1.17261 1.95653</transform>
+	</obj>
+	<obj>
+		<name>pos_13</name>
+		<type>DEFAULT</type>
+		<transform>6.15908e-007 0.0 -1.0 0.0 1.0 0.0 1.0 0.0 6.15908e-007 -12.6772 1.22663 16.0333</transform>
+	</obj>
+	<obj>
+		<name>pos_15</name>
+		<type>DEFAULT</type>
+		<transform>1.94707e-007 0.0 -1.0 0.0 1.0 0.0 1.0 0.0 1.94707e-007 11.6686 0.0968327 4.71165</transform>
+	</obj>
+	<obj>
+		<name>pos_11</name>
+		<type>DEFAULT</type>
+		<transform>-1.0 0.0 -1.50996e-007 0.0 1.0 0.0 1.50996e-007 0.0 -1.0 -34.5131 1.29778 11.1189</transform>
+	</obj>
+	<obj>
+		<name>pos_17</name>
+		<type>DEFAULT</type>
+		<transform>1.91749e-007 0.173648 -0.984808 -0.866025 -0.492404 -0.0868243 -0.5 0.852868 0.150384 24.9801 9.11336 12.7448</transform>
+	</obj>
+	<obj>
+		<name>look_8</name>
+		<type>DEFAULT</type>
+		<transform>0.335465 -0.43026 0.838057 -0.140989 -0.902518 -0.406918 0.931443 0.0183502 -0.363425 -49.4041 1.24325 7.95993</transform>
+	</obj>
+	<obj>
+		<name>look_10</name>
+		<type>DEFAULT</type>
+		<transform>-0.658213 -0.43026 -0.617764 0.29975 -0.902518 0.309209 -0.690584 0.0183502 0.72302 -43.4691 1.0646 -5.04998</transform>
+	</obj>
+	<obj>
+		<name>look_12</name>
+		<type>DEFAULT</type>
+		<transform>0.540939 -0.43026 0.722676 -0.241503 -0.902518 -0.356562 0.805643 0.0183502 -0.592117 -24.5013 1.0646 27.3354</transform>
+	</obj>
+	<obj>
+		<name>look_14</name>
+		<type>DEFAULT</type>
+		<transform>-0.755487 -0.43026 -0.494081 0.34889 -0.902518 0.25246 -0.554541 0.0183502 0.831954 1.8754 1.37583 2.396</transform>
+	</obj>
+	<obj>
+		<name>look_16</name>
+		<type>DEFAULT</type>
+		<transform>0.797368 -0.501664 -0.335465 -0.48403 -0.863619 0.140989 -0.360443 0.0499548 -0.931443 18.2837 -0.850069 8.01084</transform>
+	</obj>
+	<obj>
+		<name>look_9</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -47.1701 1.17261 0.15633</transform>
+	</obj>
+	<obj>
+		<name>look_11</name>
+		<type>DEFAULT</type>
+		<transform>-1.0 0.0 -1.50996e-007 0.0 1.0 0.0 1.50996e-007 0.0 -1.0 -34.6513 1.29778 11.4072</transform>
+	</obj>
+	<obj>
+		<name>look_15</name>
+		<type>DEFAULT</type>
+		<transform>1.94707e-007 0.0 -1.0 0.0 1.0 0.0 1.0 0.0 1.94707e-007 13.5704 0.0968327 5.45466</transform>
+	</obj>
+	<obj>
+		<name>look_13</name>
+		<type>DEFAULT</type>
+		<transform>6.15908e-007 0.0 -1.0 0.0 1.0 0.0 1.0 0.0 6.15908e-007 -11.3077 1.22663 13.9115</transform>
+	</obj>
+	<obj>
+		<name>look_17</name>
+		<type>DEFAULT</type>
+		<transform>1.91749e-007 0.173648 -0.984808 -0.866025 -0.492404 -0.0868243 -0.5 0.852868 0.150384 24.0292 10.6063 13.7626</transform>
+	</obj>
+	<obj>
+		<name>c_final_c</name>
+		<type>DEFAULT</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -69.3679 4.26546 -29.5063</transform>
+		<model>
+			<mesh>c_final_c</mesh>
+			<visible>false</visible>
+			<aabb>-0.996422 -2.2337 2.86813 0.996429 2.2337 -2.86813</aabb>
+		</model>
+		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
+		<col_type>VISIBLE_GEOM</col_type>
+	</obj>
+	<cameras_info>
+		<cam_timing id="17" time="42" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="17" x="23.1598" y="-1.18447" z="6.22619" />
+		<cam_pos id="17" x="22.8447" y="-1.18447" z="6.63653" />
+		<cam_pos id="17" x="19.5852" y="0.949755" z="12.1368" />
+		<cam_pos id="17" x="17.0881" y="2.64013" z="17.0272" />
+		<cam_pos id="17" x="14.5911" y="3.74284" z="21.9177" />
+		<cam_pos id="17" x="12.094" y="4.46093" z="26.8081" />
+		<cam_pos id="17" x="9.59697" y="4.59135" z="31.6986" />
+		<cam_pos id="17" x="7.09991" y="4.28559" z="36.589" />
+		<cam_pos id="17" x="6.94248" y="4.27793" z="36.8656" />
+		<cam_lookAt id="17" x="18.2954" y="-0.469505" z="8.01297" />
+		<cam_lookAt id="17" x="13.0852" y="1.74507" z="10.731" />
+		<cam_lookAt id="17" x="7.87495" y="3.95965" z="13.4491" />
+		<cam_lookAt id="17" x="2.66473" y="6.17423" z="16.1672" />
+		<cam_lookAt id="17" x="-2.54549" y="8.3888" z="18.8853" />
+		<cam_lookAt id="17" x="-7.7557" y="10.6034" z="21.6033" />
+		<cam_lookAt id="17" x="-12.9659" y="12.818" z="24.3214" />
+		<cam_timing id="11" time="1.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="11" x="-46.9541" y="1.11328" z="-9.17267" />
+		<cam_pos id="11" x="-45.9756" y="1.06246" z="-8.09207" />
+		<cam_pos id="11" x="-43.2938" y="1.10724" z="-3.73584" />
+		<cam_pos id="11" x="-40.2071" y="1.1012" z="1.99869" />
+		<cam_pos id="11" x="-36.8778" y="1.09516" z="8.18583" />
+		<cam_pos id="11" x="-33.3015" y="1.08913" z="14.2796" />
+		<cam_pos id="11" x="-29.8801" y="1.08309" z="20.1264" />
+		<cam_pos id="11" x="-26.9287" y="1.53311" z="26.1256" />
+		<cam_pos id="11" x="-22.666" y="1.07403" z="31.0619" />
+		<cam_pos id="11" x="-21.1357" y="1.07101" z="32.4401" />
+		<cam_lookAt id="11" x="-43.7168" y="1.10724" z="-5.2059" />
+		<cam_lookAt id="11" x="-40.3454" y="1.1012" z="2.28699" />
+		<cam_lookAt id="11" x="-37.0161" y="1.09516" z="8.47412" />
+		<cam_lookAt id="11" x="-33.4397" y="1.08913" z="14.5679" />
+		<cam_lookAt id="11" x="-30.0183" y="1.08309" z="20.4147" />
+		<cam_lookAt id="11" x="-22.9499" y="1.3081" z="30.7108" />
+		<cam_lookAt id="11" x="-22.6349" y="1.53311" z="29.7388" />
+		<cam_timing id="15" time="1.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="15" x="-1.87202" y="1.4103" z="-0.529686" />
+		<cam_pos id="15" x="-1.14629" y="1.3737" z="-0.142315" />
+		<cam_pos id="15" x="1.18917" y="1.08495" z="0.389788" />
+		<cam_pos id="15" x="4.25038" y="0.759603" z="1.30926" />
+		<cam_pos id="15" x="7.31158" y="0.434254" z="2.22873" />
+		<cam_pos id="15" x="10.3728" y="0.108905" z="3.14821" />
+		<cam_pos id="15" x="13.434" y="-0.216444" z="4.06768" />
+		<cam_pos id="15" x="16.4952" y="-0.541793" z="4.98716" />
+		<cam_pos id="15" x="19.5564" y="-0.867143" z="5.90663" />
+		<cam_pos id="15" x="22.8487" y="-1.17576" z="6.36026" />
+		<cam_pos id="15" x="23.3857" y="-1.19249" z="6.44962" />
+		<cam_lookAt id="15" x="0.029808" y="1.4103" z="0.21332" />
+		<cam_lookAt id="15" x="0.755543" y="1.3737" z="0.600691" />
+		<cam_lookAt id="15" x="3.09101" y="1.08495" z="1.13279" />
+		<cam_lookAt id="15" x="6.15221" y="0.759603" z="2.05227" />
+		<cam_lookAt id="15" x="9.21341" y="0.434254" z="2.97174" />
+		<cam_lookAt id="15" x="12.2746" y="0.108905" z="3.89121" />
+		<cam_lookAt id="15" x="15.3358" y="-0.216444" z="4.81069" />
+		<cam_lookAt id="15" x="18.397" y="-0.541793" z="5.73016" />
+		<cam_lookAt id="15" x="20.8162" y="-0.867143" z="6.1638" />
+		<cam_lookAt id="15" x="21.6731" y="-1.17576" z="6.4933" />
+		<cam_lookAt id="15" x="21.3708" y="-1.19249" z="7.28091" />
+		<cam_timing id="13" time="1.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="13" x="-22.5347" y="1.38225" z="31.8577" />
+		<cam_pos id="13" x="-21.9512" y="1.06674" z="30.8483" />
+		<cam_pos id="13" x="-17.7524" y="1.11861" z="25.5255" />
+		<cam_pos id="13" x="-15.1445" y="1.17048" z="20.4213" />
+		<cam_pos id="13" x="-12.294" y="1.22235" z="14.9315" />
+		<cam_pos id="13" x="-7.5773" y="1.27423" z="10.213" />
+		<cam_pos id="13" x="-4.18405" y="1.3261" z="5.1089" />
+		<cam_pos id="13" x="-1.35433" y="1.37797" z="0.00476456" />
+		<cam_pos id="13" x="-0.802147" y="1.07101" z="-0.698975" />
+		<cam_lookAt id="13" x="-21.2536" y="1.38225" z="29.5173" />
+		<cam_lookAt id="13" x="-20.6701" y="1.06674" z="28.5078" />
+		<cam_lookAt id="13" x="-16.383" y="1.11861" z="23.4037" />
+		<cam_lookAt id="13" x="-13.775" y="1.17048" z="18.2995" />
+		<cam_lookAt id="13" x="-10.9246" y="1.22235" z="12.8097" />
+		<cam_lookAt id="13" x="-6.20786" y="1.27423" z="8.09125" />
+		<cam_lookAt id="13" x="-2.81462" y="1.3261" z="2.98711" />
+		<cam_lookAt id="13" x="-1.37679" y="1.37797" z="0.730755" />
+		<cam_lookAt id="13" x="0.184322" y="1.07101" z="0.641396" />
+		<cam_timing id="9" time="1" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="9" x="-47.9256" y="0.740452" z="12.2463" />
+		<cam_pos id="9" x="-47.873" y="0.736176" z="11.7712" />
+		<cam_pos id="9" x="-47.6175" y="0.870437" z="9.31726" />
+		<cam_pos id="9" x="-47.3621" y="1.17261" z="6.8633" />
+		<cam_pos id="9" x="-47.3516" y="1.47265" z="4.40991" />
+		<cam_pos id="9" x="-47.3412" y="1.77269" z="1.95653" />
+		<cam_pos id="9" x="-47.2722" y="1.59727" z="-0.496853" />
+		<cam_pos id="9" x="-47.2032" y="1.42185" z="-2.95024" />
+		<cam_pos id="9" x="-46.8389" y="1.23973" z="-5.40171" />
+		<cam_pos id="9" x="-46.4745" y="1.05761" z="-7.85319" />
+		<cam_pos id="9" x="-46.228" y="1.07101" z="-9.46629" />
+		<cam_lookAt id="9" x="-49.4019" y="0.806566" z="7.95936" />
+		<cam_lookAt id="9" x="-47.664" y="0.678284" z="8.40706" />
+		<cam_lookAt id="9" x="-47.3621" y="1.17261" z="5.06309" />
+		<cam_lookAt id="9" x="-47.3412" y="1.77269" z="0.156328" />
+		<cam_lookAt id="9" x="-46.8839" y="1.59727" z="-4.24954" />
+		<cam_lookAt id="9" x="-46.0759" y="1.42185" z="-7.04885" />
+		<cam_lookAt id="9" x="-44.5272" y="1.46476" z="-6.49676" />
+		<cam_timing id="16" time="5.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="16" x="22.8455" y="-1.18883" z="6.8913" />
+		<cam_pos id="16" x="22.8447" y="-1.18447" z="6.63652" />
+		<cam_pos id="16" x="22.844" y="-1.18012" z="6.38175" />
+		<cam_pos id="16" x="22.8432" y="-1.17576" z="6.12697" />
+		<cam_lookAt id="16" x="18.3187" y="-0.469506" z="8.01725" />
+		<cam_lookAt id="16" x="18.2954" y="-0.723215" z="8.01297" />
+		<cam_lookAt id="16" x="18.272" y="-0.976924" z="8.0087" />
+		<cam_lookAt id="16" x="18.2487" y="-1.23063" z="8.00442" />
+		<cam_timing id="14" time="5.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="14" x="-0.93825" y="1.36942" z="-0.289394" />
+		<cam_pos id="14" x="-1.14629" y="1.3737" z="-0.142315" />
+		<cam_pos id="14" x="-1.35433" y="1.37797" z="0.00476402" />
+		<cam_pos id="14" x="-1.56237" y="1.38225" z="0.151843" />
+		<cam_lookAt id="14" x="1.87966" y="1.758" z="2.3909" />
+		<cam_lookAt id="14" x="1.87682" y="1.50322" z="2.3943" />
+		<cam_lookAt id="14" x="1.87398" y="1.24845" z="2.3977" />
+		<cam_lookAt id="14" x="1.87114" y="0.993667" z="2.40109" />
+		<cam_timing id="12" time="6.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="12" x="-22.9819" y="1.05819" z="31.146" />
+		<cam_pos id="12" x="-22.7361" y="1.06246" z="31.0789" />
+		<cam_pos id="12" x="-22.04" y="1.06674" z="30.8751" />
+		<cam_pos id="12" x="-21.7942" y="1.07101" z="30.808" />
+		<cam_lookAt id="12" x="-24.5071" y="1.44677" z="27.3387" />
+		<cam_lookAt id="12" x="-24.5033" y="1.19199" z="27.3365" />
+		<cam_lookAt id="12" x="-24.4994" y="0.937209" z="27.3343" />
+		<cam_lookAt id="12" x="-24.4956" y="0.682431" z="27.3321" />
+		<cam_timing id="10" time="5.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="10" x="-46.7145" y="1.05276" z="-7.74065" />
+		<cam_pos id="10" x="-46.4745" y="1.05761" z="-7.85319" />
+		<cam_pos id="10" x="-46.2346" y="1.06246" z="-7.96572" />
+		<cam_pos id="10" x="-45.9756" y="1.06587" z="-8.09207" />
+		<cam_pos id="10" x="-45.7737" y="1.07101" z="-8.18316" />
+		<cam_lookAt id="10" x="-43.4641" y="1.44677" z="-5.05426" />
+		<cam_lookAt id="10" x="-43.4674" y="1.19199" z="-5.0514" />
+		<cam_lookAt id="10" x="-43.4708" y="0.937209" z="-5.04855" />
+		<cam_lookAt id="10" x="-43.4742" y="0.682431" z="-5.0457" />
+		<cam_timing id="8" time="5.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="8" x="-48.8701" y="0.722822" z="11.7735" />
+		<cam_pos id="8" x="-48.3848" y="0.727097" z="11.7724" />
+		<cam_pos id="8" x="-47.873" y="0.731373" z="11.7712" />
+		<cam_pos id="8" x="-47.4293" y="0.735648" z="11.7701" />
+		<cam_lookAt id="8" x="-49.4105" y="1.62542" z="7.96166" />
+		<cam_lookAt id="8" x="-49.4062" y="1.37064" z="7.96051" />
+		<cam_lookAt id="8" x="-49.4019" y="1.11586" z="7.95936" />
+		<cam_lookAt id="8" x="-49.3977" y="0.86108" z="7.95821" />
+		<cam_timing id="7" time="12.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="7" x="-60.8103" y="10.7065" z="-31.1617" />
+		<cam_pos id="7" x="-60.6813" y="10.706" z="-30.4228" />
+		<cam_pos id="7" x="-60.7015" y="10.7055" z="-29.6691" />
+		<cam_pos id="7" x="-60.8709" y="10.7049" z="-28.9007" />
+		<cam_lookAt id="7" x="-74.7697" y="-3.09031" z="-24.2322" />
+		<cam_lookAt id="7" x="-74.7637" y="-3.20228" z="-24.2328" />
+		<cam_lookAt id="7" x="-74.7576" y="-3.31424" z="-24.2335" />
+		<cam_lookAt id="7" x="-74.7516" y="-3.42621" z="-24.2342" />
+		<cam_timing id="5" time="8.0" start_delay="0.0" finish_delay="0.0" to_player="true" />
+		<cam_pos id="5" x="10.0024" y="-1.6992" z="36.2418" />
+		<cam_pos id="5" x="10.2433" y="-1.78232" z="36.2406" />
+		<cam_pos id="5" x="10.4842" y="-1.86544" z="36.2395" />
+		<cam_pos id="5" x="10.7251" y="-1.94856" z="36.2383" />
+		<cam_lookAt id="5" x="7.99512" y="-1.03239" z="36.1778" />
+		<cam_lookAt id="5" x="8.00117" y="-1.14435" z="36.1771" />
+		<cam_lookAt id="5" x="8.00722" y="-1.25632" z="36.1765" />
+		<cam_lookAt id="5" x="8.01326" y="-1.36828" z="36.1758" />
+		<cam_timing id="3" time="11.0" start_delay="6.0" finish_delay="0.0" />
+		<cam_pos id="3" x="7.56884" y="2.09415" z="36.6288" />
+		<cam_pos id="3" x="8.48781" y="0.393237" z="36.9137" />
+		<cam_pos id="3" x="9.40679" y="-0.644268" z="37.1987" />
+		<cam_pos id="3" x="10.5795" y="-1.44388" z="37.493" />
+		<cam_pos id="3" x="11.7521" y="-1.81144" z="37.7874" />
+		<cam_lookAt id="3" x="-5.05055" y="4.13938" z="33.2758" />
+		<cam_lookAt id="3" x="-5.14897" y="3.30163" z="33.1639" />
+		<cam_lookAt id="3" x="-5.24739" y="2.46389" z="33.052" />
+		<cam_lookAt id="3" x="-5.34581" y="1.62614" z="32.94" />
+		<cam_timing id="4" time="11.0" start_delay="0.0" finish_delay="0.0" />
+		<cam_pos id="4" x="10.1888" y="-1.47583" z="35.2212" />
+		<cam_pos id="4" x="10.2506" y="-1.46949" z="36.6847" />
+		<cam_pos id="4" x="9.89986" y="-1.46315" z="38.0375" />
+		<cam_pos id="4" x="9.13661" y="-1.45681" z="39.2794" />
+		<cam_lookAt id="4" x="5.98876" y="0.760359" z="36.0672" />
+		<cam_lookAt id="4" x="5.98271" y="1.0151" z="36.0665" />
+		<cam_lookAt id="4" x="5.97667" y="1.26985" z="36.0658" />
+		<cam_lookAt id="4" x="5.97062" y="1.52459" z="36.0652" />
+		<cam_timing id="2" time="15.0" start_delay="1.0" finish_delay="1.0" to_player="true" />
+		<cam_pos id="2" x="12.2978" y="-2.06541" z="39.5551" />
+		<cam_pos id="2" x="11.529" y="-1.94257" z="39.4072" />
+		<cam_pos id="2" x="10.8363" y="-1.8282" z="38.9492" />
+		<cam_pos id="2" x="10.4083" y="-1.73067" z="38.3272" />
+		<cam_pos id="2" x="10.2304" y="-1.71906" z="37.4878" />
+		<cam_pos id="2" x="10.4595" y="-1.64644" z="36.4881" />
+		<cam_pos id="2" x="10.942" y="-1.55021" z="35.8135" />
+		<cam_pos id="2" x="11.7254" y="-1.40609" z="35.3561" />
+		<cam_pos id="2" x="12.4301" y="-1.29572" z="35.2617" />
+		<cam_pos id="2" x="13.1178" y="-1.22017" z="35.4081" />
+		<cam_pos id="2" x="13.7113" y="-1.17085" z="35.6874" />
+		<cam_pos id="2" x="14.2954" y="-1.12819" z="36.294" />
+		<cam_pos id="2" x="14.5729" y="-1.11984" z="37.1372" />
+		<cam_pos id="2" x="14.4652" y="-1.11567" z="37.9801" />
+		<cam_pos id="2" x="14.2478" y="-1.11149" z="38.7001" />
+		<cam_lookAt id="2" x="12.3713" y="-2.02737" z="37.2121" />
+		<cam_lookAt id="2" x="12.2863" y="-1.61095" z="37.4494" />
+		<cam_lookAt id="2" x="12.2015" y="-1.29794" z="37.6024" />
+		<cam_lookAt id="2" x="12.119" y="-1.01645" z="37.7475" />
+		<cam_timing id="1" time="12.0" start_delay="1.0" finish_delay="0.0" />
+		<cam_pos id="1" x="6.80134" y="4.33637" z="36.5036" />
+		<cam_pos id="1" x="7.09991" y="4.28559" z="36.589" />
+		<cam_pos id="1" x="8.79028" y="3.66514" z="36.9923" />
+		<cam_pos id="1" x="9.78802" y="2.37039" z="37.3377" />
+		<cam_pos id="1" x="9.78802" y="0.857935" z="37.3377" />
+		<cam_pos id="1" x="9.96294" y="-0.467925" z="37.3377" />
+		<cam_pos id="1" x="11.0058" y="-1.10083" z="37.6816" />
+		<cam_pos id="1" x="12.2236" y="-1.49033" z="38.0255" />
+		<cam_pos id="1" x="13.4414" y="-1.86234" z="38.3693" />
+		<cam_pos id="1" x="14.6592" y="-2.06561" z="38.7132" />
+		<cam_lookAt id="1" x="-12.9659" y="12.818" z="24.3214" />
+		<cam_lookAt id="1" x="-12.598" y="10.1444" z="25.9362" />
+		<cam_lookAt id="1" x="-12.23" y="7.47081" z="27.5511" />
+		<cam_lookAt id="1" x="-11.8621" y="4.79723" z="29.1659" />
+		<cam_lookAt id="1" x="-11.4942" y="2.12365" z="30.7808" />
+		<cam_lookAt id="1" x="-11.1262" y="-0.549921" z="32.3956" />
+	</cameras_info>
+	<respawns>
+		<respawn id='g002' transform='0.999989 0.0 0.00467248 0.0 1.0 0.0 -0.00467248 0.0 0.999989 14.5577 -1.01504 15.2141' />
+		<respawn id='rc001' transform='-0.26333 0.0 0.964706 0.0 1.0 0.0 -0.964706 0.0 -0.26333 7.91342 -1.55537 36.9688' />
+		<respawn id='g001' transform='0.703795 0.0 0.710403 0.0 1.0 0.0 -0.710403 0.0 0.703795 15.084 -0.565886 25.2851' />
+		<respawn id='r001' transform='-0.26333 0.0 0.964706 0.0 1.0 0.0 -0.964706 0.0 -0.26333 -10.8764 -0.459743 10.7246' />
+	</respawns>
+</scene>

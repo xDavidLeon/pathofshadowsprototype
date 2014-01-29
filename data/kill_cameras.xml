@@ -1,0 +1,289 @@
+<kill_cameras>
+<kill_camera name="kill">
+  <type shadow="0" />
+     <shadow_translation z="-1.5f" />
+	  <sequence>
+       <data>
+         <position x="-1.6" y="1.7" z="-0.8"/>
+         <look_at x="0" y="0.25" z="1"/>
+         <frame num="19"/>
+       </data>
+       <data>
+         <position x="2" y="1.7" z="2"/>
+         <look_at x="-1,5" y="0" z="0"/>
+         <frame num="0"/>
+       </data>
+     </sequence><sequence>
+       <data>
+         <position x="-1.5" y="0.25" z="2.5"/>
+         <look_at x="0" y="0.25" z="0.0"/>
+         <frame num="19"/>
+       </data>
+       <data>
+         <position x="2" y="0,5" z="2"/>
+         <look_at x="-1,5" y="0" z="0"/>
+         <frame num="0"/>
+       </data>
+     </sequence>
+	 <sequence>
+       <data>
+         <position x="1.2" y="1" z="2"/>
+         <look_at x="-0.5" y="0.3" z="1"/>
+         <frame num="19"/>
+       </data>
+       <data>
+         <position x="-1.5" y="0.25" z="2.5"/>
+         <look_at x="0" y="0.25" z="0.0"/>
+         <frame num="0"/>
+       </data>
+	</sequence>
+  </kill_camera> 
+  <kill_camera name="kill2">
+    <type shadow="0" />
+    <shadow_translation z="-1.65f" />
+    <sequence>	
+      <data>
+        <position x="-2" y="2.5" z="2"/>
+        <look_at x="-0.5" y="0.25" z="0.5"/>
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="1" y="2.5" z="3"/>
+        <look_at x="0" y="0.2" z="0.5"/>
+        <frame num="0"/>
+      </data>	
+    </sequence>
+	<sequence>	
+      <data>
+        <position x="-1.1" y="1.2" z="2.5"/>
+        <look_at x="0.5" y="0.25" z="0.0"/>
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="0.7" y="0.23" z="3"/>
+        <look_at x="0.2" y="0.2" z="0.5"/>
+        <frame num="0"/>
+      </data>	
+    </sequence>
+	<sequence>	
+      <data>
+        <position x="2" y="1" z="1"/>
+        <look_at x="0.5" y="0.6" z="1"/>	
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="-1" y="0.1" z="3"/>
+        <look_at x="0.2" y="0.4" z="0.5"/>
+        <frame num="0"/>
+      </data>	
+    </sequence> 
+  </kill_camera>
+  <kill_camera name="kill3">
+    <type shadow="0" />
+    <shadow_translation z="-1.057f" x="-0.551f"/>
+      <sequence>
+      <data>
+        <position x="-2" y="3" z="2"/>
+        <look_at x="0.5" y="0.5" z="0.5"/>
+        <frame num="45"/>
+      </data>
+      <data>
+        <position x="2" y="2" z="1.5"/>
+        <look_at x="0" y="0.2" z="0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="-1.5" y="0.1" z="2"/>
+        <look_at x="0.5" y="0.5" z="0.0"/>
+        <frame num="45"/>
+      </data>
+      <data>
+        <position x="2" y="0.2" z="1.5"/>
+        <look_at x="0" y="0.2" z="0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="-1" y="1" z="1.8"/>
+        <look_at x="0.5" y="0.5" z="0.5"/>
+        <frame num="45"/>
+      </data>
+      <data>
+        <position x="1.8" y="0.2" z="1.6"/>
+        <look_at x="0" y="0.2" z="0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+  </kill_camera>  
+  <kill_camera name="kill_shadow">
+    <type shadow="1" />
+    <shadow_translation z="-1.65f" />
+    <sequence>
+	  <data>
+        <position x="2" y="2.5" z="3"/>
+        <look_at x="0.2" y="0.25" z="1.5"/>
+        <frame num="40"/>
+	    </data>
+		<data>
+        <position x="-1.5" y="2" z="-1.5"/>
+        <look_at x="0" y="0.2" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+	  <data>
+        <position x="2.5" y="0.5" z="3.5"/>
+        <look_at x="0.2" y="0.25" z="1.5"/>
+        <frame num="40"/>
+	    </data>
+		<data>
+        <position x="-1.5" y="0.2" z="-1.5"/>
+        <look_at x="0" y="0.2" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	 <sequence>
+      <data>
+        <position x="-1.5" y="2" z="3.5"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="2.5" y="0.5" z="1"/>
+        <look_at x="0.2" y="0.25" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence>  
+  </kill_camera> 
+  <kill_camera name="kill_shadow2">
+    <type shadow="1" />
+    <shadow_translation z="-1.3f" />
+      <sequence>
+      <data>
+        <position x="-1.8" y="2" z="2"/>
+        <look_at x="0.5" y="0.2" z="-0.5"/>
+        <frame num="65"/>
+      </data>
+      <data>
+        <position x="1.3" y="2" z="2.0"/>
+        <look_at x="0.0" y="0.2" z="0.5"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="-1.2" y="0.5" z="2.3"/>
+        <look_at x="1.5" y="0.5" z="0.0"/>
+        <frame num="65"/>
+      </data>
+      <data>
+        <position x="1.3" y="0.2" z="2.0"/>
+        <look_at x="0.0" y="0.2" z="0.5"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="1.5" y="0.2" z="2.5"/>
+        <look_at x="0.0" y="0.2" z="0.5"/>
+        <frame num="65"/>	
+     </data>     
+	 <data>
+        <position x="-0.75" y="0.5" z="-1.35"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="0"/>
+      </data>
+    </sequence> 
+  </kill_camera> 
+  <kill_camera name="kill_air">
+    <type shadow="0" air="1" />
+    <shadow_translation z="-1.25f" y="5.0"/>
+  <sequence>
+      <data>
+        <position x="-2" y="-5" z="3.25"/>
+        <look_at x="1" y="-5" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence>   
+   <sequence>
+      <data>
+        <position x="0.35" y="-4.75" z="3.25"/>
+        <look_at x="0" y="-4.75" z="0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+  </kill_camera>
+  <kill_camera name="kill_blend">
+    <type shadow="0" blend="1" />
+    <shadow_translation z="0.0f" y="-1.0"/>
+    <sequence>
+      <data>
+        <position x="-1.5" y="0.25" z="3.0"/>
+        <look_at x="0" y="0.25" z="1.5"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+  </kill_camera>
+  <kill_camera name="kill_panic">
+    <type shadow="0" panic ="1"/>
+    <shadow_translation z="2.0f" x="-0,24"/>
+	<sequence>
+      <data>
+        <position x="-1" y="3" z="-1"/>
+        <look_at x="0" y="0.25" z="0"/>
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="1" y="3" z="1"/>
+        <look_at x="0.2" y="0.25" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence> 
+	<sequence>
+      <data>
+        <position x="-1.5" y="3" z="-1"/>
+        <look_at x="1" y="0.25" z="2"/>
+        <frame num="40"/>
+      </data>
+      <data>
+        <position x="2.5" y="3" z="1"/>
+        <look_at x="0.2" y="0.25" z="1"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+  </kill_camera>
+  <death_camera name="death2">
+    <shadow_translation z="1.0" x="-0.074"/>
+    <sequence>
+      <data>
+        <position x="1.4" y="1" z="1.4"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="1.7" y="2" z="1.7"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="-1.7" y="2" z="1.7"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+	<sequence>
+      <data>
+        <position x="-1.7" y="1" z="1.7"/>
+        <look_at x="0" y="0.25" z="0.0"/>
+        <frame num="0"/>
+      </data>
+    </sequence>
+  </death_camera>
+</kill_cameras>

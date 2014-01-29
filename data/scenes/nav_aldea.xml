@@ -1,0 +1,227 @@
+<graph>
+	<nodelist>
+		<node id="41" pos_x="43.6066" pos_y="0.80147" pos_z="41.945" />
+		<node id="40" pos_x="51.5472" pos_y="0.487682" pos_z="29.7582" />
+		<node id="39" pos_x="34.4032" pos_y="0.477386" pos_z="43.4836" final="true" />
+		<node id="38" pos_x="53.1957" pos_y="0.638018" pos_z="40.2926" />
+		<node id="37" pos_x="51.4736" pos_y="0.324296" pos_z="6.42691" />
+		<node id="36" pos_x="48.7245" pos_y="0.609491" pos_z="6.9637" />
+		<node id="35" pos_x="49.7832" pos_y="0.518185" pos_z="16.853" />
+		<node id="34" pos_x="45.5998" pos_y="0.48193" pos_z="17.5394" />
+		<node id="33" pos_x="41.1876" pos_y="0.609583" pos_z="18.3018" />
+		<node id="32" pos_x="47.8381" pos_y="0.303556" pos_z="3.77647" />
+		<node id="31" pos_x="43.2221" pos_y="0.325341" pos_z="4.06784" />
+		<node id="30" pos_x="38.6623" pos_y="0.817235" pos_z="4.87665" />
+		<node id="29" pos_x="28.4758" pos_y="0.578716" pos_z="5.69434" />
+		<node id="28" pos_x="0.395191" pos_y="2.35905" pos_z="12.7328" />
+		<node id="27" pos_x="17.7557" pos_y="0.397606" pos_z="8.63325" />
+		<node id="26" pos_x="16.9448" pos_y="0.670211" pos_z="3.49389" />
+		<node id="25" pos_x="16.1177" pos_y="0.479073" pos_z="-12.1786" />
+		<node id="24" pos_x="4.66127" pos_y="0.675972" pos_z="-12.2306" />
+		<node id="23" pos_x="20.0087" pos_y="0.296532" pos_z="-16.5057" />
+		<node id="22" pos_x="17.769" pos_y="0.604603" pos_z="-23.4854" />
+		<node id="21" pos_x="11.5751" pos_y="0.254157" pos_z="-22.3713" />
+		<node id="20" pos_x="10.6931" pos_y="0.173183" pos_z="-26.2019" />
+		<node id="19" pos_x="-16.6301" pos_y="0.331176" pos_z="-32.9612" />
+		<node id="18" pos_x="-1.80621" pos_y="0.486845" pos_z="-11.0308" />
+		<node id="17" pos_x="-7.56596" pos_y="0.626801" pos_z="-23.0916" />
+		<node id="16" pos_x="-13.8506" pos_y="0.437753" pos_z="-12.8745" />
+		<node id="15" pos_x="-6.51425" pos_y="0.238736" pos_z="-9.64395" />
+		<node id="14" pos_x="-5.02656" pos_y="2.41424" pos_z="5.91175" />
+		<node id="13" pos_x="-3.532" pos_y="2.59703" pos_z="13.1184" />
+		<node id="12" pos_x="-7.7615" pos_y="2.62187" pos_z="15.3548" />
+		<node id="11" pos_x="-14.6413" pos_y="2.51798" pos_z="16.8036" />
+		<node id="10" pos_x="-26.0872" pos_y="2.73466" pos_z="7.97205" />
+		<node id="9" pos_x="-19.7866" pos_y="2.46381" pos_z="5.51733" />
+		<node id="8" pos_x="-20.3313" pos_y="0.588654" pos_z="-11.9547" />
+		<node id="7" pos_x="-27.5242" pos_y="0.748255" pos_z="-19.5926" />
+		<node id="6" pos_x="-23.7107" pos_y="0.732984" pos_z="-27.249" />
+		<node id="5" pos_x="-28.1305" pos_y="0.653527" pos_z="-31.4" />
+		<node id="4" pos_x="-41.9128" pos_y="-0.738767" pos_z="-44.0454" />
+		<node id="3" pos_x="-54.1022" pos_y="-2.25925" pos_z="-52.7681" />
+		<node id="2" pos_x="-66.4168" pos_y="-3.99048" pos_z="-39.5603" />
+		<node id="1" pos_x="-73.776" pos_y="-3.73336" pos_z="-38.3402" />
+	</nodelist>
+	<edgelist>
+		<edges id="41">
+			<edge id="38" distance="9.73178"/>
+			<edge id="39" distance="9.33671"/>
+		</edges>
+		<edges id="40">
+			<edge id="35" distance="13.0252"/>
+			<edge id="38" distance="10.6637"/>
+		</edges>
+		<edges id="39">
+			<edge id="41" distance="9.33671"/>
+		</edges>
+		<edges id="38">
+			<edge id="40" distance="10.6637"/>
+			<edge id="41" distance="9.73178"/>
+		</edges>
+		<edges id="37">
+			<edge id="36" distance="2.81555"/>
+		</edges>
+		<edges id="36">
+			<edge id="32" distance="3.32232"/>
+			<edge id="35" distance="9.94625"/>
+			<edge id="37" distance="2.81555"/>
+		</edges>
+		<edges id="35">
+			<edge id="36" distance="9.94625"/>
+			<edge id="34" distance="4.23951"/>
+			<edge id="40" distance="13.0252"/>
+		</edges>
+		<edges id="34">
+			<edge id="35" distance="4.23951"/>
+			<edge id="33" distance="4.47939"/>
+			<edge id="31" distance="13.6807"/>
+		</edges>
+		<edges id="33">
+			<edge id="30" distance="13.6621"/>
+			<edge id="34" distance="4.47939"/>
+		</edges>
+		<edges id="32">
+			<edge id="31" distance="4.62524"/>
+			<edge id="36" distance="3.32232"/>
+		</edges>
+		<edges id="31">
+			<edge id="30" distance="4.65704"/>
+			<edge id="32" distance="4.62524"/>
+			<edge id="34" distance="13.6807"/>
+		</edges>
+		<edges id="30">
+			<edge id="29" distance="10.222"/>
+			<edge id="31" distance="4.65704"/>
+			<edge id="33" distance="13.6621"/>
+		</edges>
+		<edges id="29">
+			<edge id="27" distance="11.1171"/>
+			<edge id="30" distance="10.222"/>
+		</edges>
+		<edges id="28">
+			<edge id="13" distance="3.95324"/>
+			<edge id="27" distance="17.9455"/>
+		</edges>
+		<edges id="27">
+			<edge id="26" distance="5.21008"/>
+			<edge id="28" distance="17.9455"/>
+			<edge id="29" distance="11.1171"/>
+		</edges>
+		<edges id="26">
+			<edge id="27" distance="5.21008"/>
+			<edge id="25" distance="15.6955"/>
+		</edges>
+		<edges id="25">
+			<edge id="23" distance="5.82208"/>
+			<edge id="26" distance="15.6955"/>
+			<edge id="24" distance="11.4582"/>
+		</edges>
+		<edges id="24">
+			<edge id="18" distance="6.58054"/>
+			<edge id="23" distance="15.9362"/>
+			<edge id="25" distance="11.4582"/>
+		</edges>
+		<edges id="23">
+			<edge id="25" distance="5.82208"/>
+			<edge id="24" distance="15.9362"/>
+			<edge id="22" distance="7.33674"/>
+		</edges>
+		<edges id="22">
+			<edge id="21" distance="6.30311"/>
+			<edge id="23" distance="7.33674"/>
+		</edges>
+		<edges id="21">
+			<edge id="20" distance="3.93161"/>
+			<edge id="22" distance="6.30311"/>
+		</edges>
+		<edges id="20">
+			<edge id="21" distance="3.93161"/>
+			<edge id="17" distance="18.5276"/>
+		</edges>
+		<edges id="19">
+			<edge id="6" distance="9.10634"/>
+			<edge id="17" distance="13.4036"/>
+		</edges>
+		<edges id="18">
+			<edge id="24" distance="6.58054"/>
+			<edge id="15" distance="4.91434"/>
+			<edge id="17" distance="13.3663"/>
+		</edges>
+		<edges id="17">
+			<edge id="18" distance="13.3663"/>
+			<edge id="19" distance="13.4036"/>
+			<edge id="16" distance="11.9968"/>
+			<edge id="20" distance="18.5276"/>
+		</edges>
+		<edges id="16">
+			<edge id="15" distance="8.0186"/>
+			<edge id="17" distance="11.9968"/>
+			<edge id="8" distance="6.54736"/>
+		</edges>
+		<edges id="15">
+			<edge id="14" distance="15.7774"/>
+			<edge id="16" distance="8.0186"/>
+			<edge id="18" distance="4.91434"/>
+		</edges>
+		<edges id="14">
+			<edge id="13" distance="7.36231"/>
+			<edge id="15" distance="15.7774"/>
+			<edge id="9" distance="14.7654"/>
+		</edges>
+		<edges id="13">
+			<edge id="12" distance="4.78443"/>
+			<edge id="14" distance="7.36231"/>
+			<edge id="28" distance="3.95324"/>
+		</edges>
+		<edges id="12">
+			<edge id="11" distance="7.03148"/>
+			<edge id="13" distance="4.78443"/>
+		</edges>
+		<edges id="11">
+			<edge id="9" distance="12.4039"/>
+			<edge id="12" distance="7.03148"/>
+		</edges>
+		<edges id="10">
+			<edge id="9" distance="6.76735"/>
+		</edges>
+		<edges id="9">
+			<edge id="8" distance="17.5808"/>
+			<edge id="10" distance="6.76735"/>
+			<edge id="11" distance="12.4039"/>
+			<edge id="14" distance="14.7654"/>
+		</edges>
+		<edges id="8">
+			<edge id="7" distance="10.4929"/>
+			<edge id="16" distance="6.54736"/>
+			<edge id="9" distance="17.5808"/>
+		</edges>
+		<edges id="7">
+			<edge id="6" distance="8.55356"/>
+			<edge id="8" distance="10.4929"/>
+		</edges>
+		<edges id="6">
+			<edge id="7" distance="8.55356"/>
+			<edge id="19" distance="9.10634"/>
+			<edge id="5" distance="6.06398"/>
+		</edges>
+		<edges id="5">
+			<edge id="4" distance="18.7563"/>
+			<edge id="6" distance="6.06398"/>
+		</edges>
+		<edges id="4">
+			<edge id="3" distance="15.0657"/>
+			<edge id="5" distance="18.7563"/>
+		</edges>
+		<edges id="3">
+			<edge id="2" distance="18.1409"/>
+			<edge id="4" distance="15.0657"/>
+		</edges>
+		<edges id="2">
+			<edge id="1" distance="7.46406"/>
+			<edge id="3" distance="18.1409"/>
+		</edges>
+		<edges id="1">
+			<edge id="2" distance="7.46406"/>
+		</edges>
+	</edgelist>
+</graph>
