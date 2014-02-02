@@ -4,9 +4,9 @@ PlayerControllerComponent::PlayerControllerComponent(Entity * e) : Component(e)
 {
 	_costCreateShadow = 5.0f; //DEPRECATED
 	_costGrowShadow = 0.4f;
-	_costTeleport = 50.0f;
+	_costTeleport = 25.0f;
 	_costBlended = 0.15f;
-	_rechargeRatio = 0.2f;
+	_rechargeRatio = 0.4f;
 	_damageInLight = 0.4f;
 
 	_canRecharge = true;

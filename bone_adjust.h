@@ -228,8 +228,8 @@ struct TBoneChainAdjust {
 				blendingIn = false;
 			}
 			
-			dbg("amount in %f\n", amount);
-			dbg("delay in %f\n", delay);
+			//dbg("amount in %f\n", amount);
+			//dbg("delay in %f\n", delay);
 		}
 		if( blendingOut )
 		{
