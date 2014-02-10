@@ -15,3 +15,8 @@
 /Path of Shadows.opensdf
 /Path of Shadows.sdf
 /*.v11.suo
+/Release/
+/Debug/
+/.gitignore
+/MCV.vcxproj
+/settings.cfg

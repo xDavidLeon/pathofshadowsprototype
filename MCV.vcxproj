@@ -69,8 +69,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(DXSDK_DIR)Include;B:\Work\MCV\lib;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Almuva\Desktop\LinceWorks\lib\SLB\src\lua;C:\Users\Almuva\Desktop\LinceWorks\lib\SLB\src;C:\Users\Almuva\Desktop\LinceWorks\lib\nvapi;C:\Users\Almuva\Desktop\LinceWorks\lib\FMOD;C:\Users\Almuva\Desktop\LinceWorks\lib\bullet-2.81-rev2613\src;C:\Users\Almuva\Desktop\LinceWorks\lib;$(DXSDK_DIR)Include;B:\Work\MCV\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Almuva\Desktop\LinceWorks\lib\nvapi;C:\Users\Almuva\Desktop\LinceWorks\lib\FMOD;C:\Users\Almuva\Desktop\LinceWorks\lib;$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
     <OutDir>.\Build\$(Configuration)\</OutDir>
     <IntDir>.\Build\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -81,8 +81,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Almuva\Desktop\LinceWorks\lib\SLB\src\lua;C:\Users\Almuva\Desktop\LinceWorks\lib\SLB\src;C:\Users\Almuva\Desktop\LinceWorks\lib\SLB;C:\Users\Almuva\Desktop\LinceWorks\lib\nvapi;C:\Users\Almuva\Desktop\LinceWorks\lib\FMOD;C:\Users\Almuva\Desktop\LinceWorks\lib\bullet-2.81-rev2613\src;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Almuva\Desktop\LinceWorks\lib\nvapi;C:\Users\Almuva\Desktop\LinceWorks\lib\FMOD;$(DXSDK_DIR)Lib\x86;B:\Work\MCV\lib\FMOD\lib;B:\Work\MCV\lib;$(LibraryPath)</LibraryPath>
     <OutDir>.\Build\$(Configuration)\</OutDir>
     <IntDir>.\Build\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -100,6 +100,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\lib;B:\Work\MCV\lib\bullet-2.81-rev2613\src;B:\Work\MCV\lib\FMOD\inc;B:\Work\MCV\lib\SLB\include;B:\Work\MCV\lib\SLB\include\SLB\lua;B:\Work\MCV\lib\cal3d;B:\Work\MCV\lib\SLB\src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
