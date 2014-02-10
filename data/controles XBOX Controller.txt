@@ -1,0 +1,13 @@
+Controles Xbox360 Controller:
+
+Left Stick: 	caminar
+	+A:			correr
+Right Stick: 	Cámara
+B:				Crow
+X:				Silent Kill
+Y:				Decoy
+LB:				Special Vision
+
+LT:				Shadow mode (aim)
+	+RT:		Create Shadow
+	+RB:		Teleport

@@ -67,34 +67,34 @@ void CIOStatus::update( float delta ) {
 		switch (i)
 		{
 		case CREATE_SHADOW:
-			b.is_pressed = current_mouse_left || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER;
+			b.is_pressed = current_mouse_left || gamepad.bRightTrigger;
 			break;
 		case SILENT_KILL:
-			b.is_pressed = current_mouse_left || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER;
+			b.is_pressed = current_mouse_left || gamepad.wButtons & XINPUT_GAMEPAD_X;
 			break;
 		case AIM:
-			b.is_pressed = current_mouse_right || gamepad.wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER;
+			b.is_pressed = current_mouse_right || gamepad.bLeftTrigger;
 			break;
 		case DECOY:
-			b.is_pressed = isPressed('Q') || gamepad.wButtons & XINPUT_GAMEPAD_X;
+			b.is_pressed = isPressed('Q') || gamepad.wButtons & XINPUT_GAMEPAD_Y;
 			break;
 		case RECHARGE:
-			b.is_pressed = isPressed('R') || gamepad.wButtons & XINPUT_GAMEPAD_B;
+			//b.is_pressed = isPressed('R') || gamepad.wButtons & XINPUT_GAMEPAD_B;
 			break;
 		case SPECIAL_VISION:
-			b.is_pressed = isPressed('E') || gamepad.wButtons & XINPUT_GAMEPAD_Y;
+			b.is_pressed = isPressed('E') || gamepad.wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER;
 			break;
 		case CROW:
-			b.is_pressed = isPressed('C') /*|| gamepad.wButtons & XINPUT_GAMEPAD_Y*/; //crow de gamepad??
+			b.is_pressed = isPressed('C') || gamepad.wButtons & XINPUT_GAMEPAD_B;
 			break;
 		case FIGHT:
-			b.is_pressed = isPressed('F') || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_THUMB;
+			//b.is_pressed = isPressed('F') || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_THUMB;
 			break;
 		case TELEPORT:
-			b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_A; //32 == Space
+			b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER; //32 == Space
 			break;
 		case BLEND:
-			b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_A; //32 == Space
+			//b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_A; //32 == Space
 			break;
 		case FORWARD:
 			b.is_pressed = isPressed('W');
@@ -109,7 +109,7 @@ void CIOStatus::update( float delta ) {
 			b.is_pressed = isPressed('D');
 			break;
 		case SPRINT:
-			b.is_pressed = isPressed(16);
+			b.is_pressed = isPressed(16) || gamepad.wButtons & XINPUT_GAMEPAD_A;
 			break;
 		case KEYBOARD_ALT:
 			b.is_pressed = isPressed(18);
@@ -354,8 +354,10 @@ bool CIOStatus::isSprinting() const
 {
 	//dbg("stick %f\n", getSpeed());
 
-	if( getSpeed() > 0.99f )
-		return true;
-	else 
-		return false;
+	//if( getSpeed() > 0.99f )
+	//	return true;
+	//else 
+	//	return false;
+
+	return isPressed(SPRINT);
 }
