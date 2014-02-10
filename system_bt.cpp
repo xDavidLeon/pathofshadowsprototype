@@ -140,6 +140,8 @@ void BTSystem::destroyEnemy(Entity* enemy)
 	BTSystem::get().eraseDeadEnemy(enemy);
 	//BTSystem::get().addEntityToRemove(enemy); //Segun Edu esto pega un tironaco que queda feo... vamos a desactivar la entity a ver que pasa
 	enemy->enabled = false;
+	//...en algunos sitios la convencion de "enemigo muerto" es enemyDataComponent==disabled, asi que toco eso tb
+	EntityManager::get().getComponent<EnemyDataComponent>(enemy)->enabled = false;
 	//Lo siguiente es guarrillo. Los malos siguen teniendo sombra cuando se "eliminan", puesto que no se eliminan de verdad.
 	//Siendo asi los transportamos al inframundo y nos aseguramos que el resto de veces nazcan ahi
 	EntityManager::get().getComponent<TransformComponent>(enemy)->transform->setOrigin(btVector3(0,-1000,0));

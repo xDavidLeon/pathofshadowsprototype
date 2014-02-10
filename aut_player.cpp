@@ -2176,6 +2176,9 @@ void AUTPlayer::falling(float delta)
 	//Actualizar visibilidad
 	_shadowAcComp->updateVisibility(delta);
 
+	//A falta de un metodo mejor, para evitar bugeos, permitimos que se pueda dirigir al player mientras cae, para casos en los que se atasca
+	PlayerControllerSystem::get().update(delta, true, false);
+
 	//lanzar un ray al suelo y ver si la distacia es la minima para aterrizar
 	btVector3 btRayFrom = _transformC->getPosition();
 	btVector3 btRayTo = btRayFrom;
@@ -2214,6 +2217,9 @@ void AUTPlayer::grounding(float delta)
 {
 	//Actualizar visibilidad
 	_shadowAcComp->updateVisibility(delta);
+
+	//Por si nos movemos en el aire al caer (fix), eliminamos inercia
+	PlayerControllerSystem::get().update(delta, false, false, false);
 
 	if( !_animation_component->actionOn("land") )
 		changeState("idleBasic");

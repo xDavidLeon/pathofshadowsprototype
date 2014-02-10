@@ -500,7 +500,7 @@ int BTCommon::die()
 
 	if( _animation_component->actionBlocked(killAnimationName) )
 	{		
-		if(killAnimationName != "kill_shadow") _eD->dead();
+		/*if(killAnimationName != "kill_shadow")*/ _eD->dead();
 		_animation_component->enabled = false;
 		return LEAVE;
 	}

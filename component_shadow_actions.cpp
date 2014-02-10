@@ -627,5 +627,6 @@ bool ShadowActionsComponent::isHidden() const
 //Dice si el player esta tocando el suelo o no
 bool ShadowActionsComponent::isGrounded() const
 {
-	return PhysicsSystem::get().checkCollision(_transC->getPosition(), _transC->getPosition() - _capsuleOffsetV*_transC->getUp(), PhysicsSystem::get().colMaskNavigation);
+	//Fix: Estiro un poco el rayo y le digo que colisiona con cualquier tipo de mesh. Esto soluciona la T-Pose.
+	return PhysicsSystem::get().checkCollision(_transC->getPosition(), _transC->getPosition() - _capsuleOffsetV*1.1f*_transC->getUp(), -1);//, PhysicsSystem::get().colMaskNavigation);
 }

@@ -2370,7 +2370,7 @@
 			<aabb>-5.70271 -1.29192 5.71491 5.70271 1.29192 -5.7149</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_039</name>
@@ -2394,7 +2394,7 @@
 			<aabb>-4.55519 -3.40827 4.06154 4.55519 3.40827 -4.06154</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_042</name>
@@ -2406,7 +2406,7 @@
 			<aabb>-4.14861 -2.95572 4.22824 4.14861 2.95572 -4.22823</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_043</name>
@@ -2418,7 +2418,7 @@
 			<aabb>-1.63328 -1.59747 1.66798 1.63328 1.59747 -1.66798</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_044</name>
@@ -2430,7 +2430,7 @@
 			<aabb>-4.61779 -1.23148 4.49661 4.6178 1.23148 -4.49661</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_045</name>
@@ -2442,7 +2442,7 @@
 			<aabb>-2.79087 -0.757902 2.62697 2.79087 0.757902 -2.62697</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>c_house_046</name>
@@ -3570,7 +3570,7 @@
 			<aabb>-1.99438 -0.237375 1.82097 1.99438 0.237375 -1.82097</aabb>
 		</model>
 		<physics shape='CONCAVE_MESH' static='true' kinematic='false'/>
-		<col_type>VISIBLE_GEOM</col_type>
+		<col_type>FORBIDDEN</col_type>
 	</obj>
 	<obj>
 		<name>box167</name>
