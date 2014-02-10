@@ -2762,7 +2762,7 @@
 	<obj>
 		<name>trigger007</name>
 		<type>TRIGGER</type>
-			<trigger_radius>2.0</trigger_radius>
+			<trigger_radius>3.0</trigger_radius>
 			<trigger_type>ONFIRSTENTER</trigger_type>
 			<trigger_command>trigger007()</trigger_command>
 		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -27.0168 0.242702 1.11118</transform>
