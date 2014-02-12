@@ -94,7 +94,7 @@ void CIOStatus::update( float delta ) {
 			b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER; //32 == Space
 			break;
 		case BLEND:
-			//b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_A; //32 == Space
+			b.is_pressed = isPressed(32) || gamepad.wButtons & XINPUT_GAMEPAD_A; //32 == Space
 			break;
 		case FORWARD:
 			b.is_pressed = isPressed('W');
