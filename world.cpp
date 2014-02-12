@@ -23,6 +23,7 @@
 #include "system_unique.h"
 #include "component_bt.h"
 #include "component_automat.h"
+#include "component_enemy_data.h"
 
 
 #include "logic_manager.h"
@@ -134,7 +135,11 @@ void World::resetCurrentLevel()
 	std::map<Entity*,Component*>::iterator iter;
 	for (iter = characters->begin(); iter != characters->end(); ++iter)
 	{
-		if(!iter->first->enabled) continue;
+		if(!iter->first->enabled) continue; //Si la entidad no esta activa nos la pasamos
+		if(EntityManager::get().getComponent<EnemyDataComponent>(iter->first)) //si la entity tiene EnemyDataComponent...
+			if(!EntityManager::get().getComponent<EnemyDataComponent>(iter->first)->enabled) //...y esta desactivado (enemigo muerto), nos lo pasamos
+				continue; 
+
 		std::set<Component*>* char_components = EntityManager::get().getAllComponentsOfEntity(iter->first);
 		std::set<Component*>::iterator iter2;
 		for (iter2 = char_components->begin(); iter2 != char_components->end(); ++iter2)

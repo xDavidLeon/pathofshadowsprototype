@@ -87,6 +87,8 @@ class BehaviourTree
 			assert(findNode(state));
 			current = findNode(state);
 		};
+
+		string killAnimationName; //fix de una guarreria de edu
 };
 
 

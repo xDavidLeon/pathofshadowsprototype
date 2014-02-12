@@ -23,6 +23,8 @@ BehaviourTree::BehaviourTree(Entity* entity)
 
 	_target = NULL;
 	_random_look_at = btVector3(FLT_MAX,FLT_MAX,FLT_MAX);
+
+	killAnimationName = "";
 }
 
 btnode *BehaviourTree::createNode(const string& s)

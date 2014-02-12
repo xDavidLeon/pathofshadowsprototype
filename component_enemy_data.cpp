@@ -212,11 +212,20 @@ void EnemyDataComponent::silentKill()
 {
 	_life = 0.0f;
 	_silent_kill = true;
-	
 
-	EntityManager::get().getComponent<BTComponent>(entity)->getBT()->pushState("die");
+	BTComponent *btc = EntityManager::get().getComponent<BTComponent>(entity);
+	AnimationComponent *ac = EntityManager::get().getComponent<AnimationComponent>(entity);
+	EnemyDataComponent* edc = EntityManager::get().getComponent<EnemyDataComponent>(entity);
+
+	btc->getBT()->pushState("die"); //Pasar al estado de "muriendo"
+
+	// Dependiendo del estado del enemigo lanza animacion con o sin espada en la mano //fix guarreria de edu		
+	if(edc->_attentionDegree == attentionDegrees::NORMAL || edc->_attentionDegree == attentionDegrees::PANIC)
+		btc->getBT()->killAnimationName = ac->getSilentKillAnimationName();
+	else if(edc->_attentionDegree == attentionDegrees::CAUTION || edc->_attentionDegree == attentionDegrees::PERMANENT_CAUTION || edc->_attentionDegree == attentionDegrees::ALERT)
+		btc->getBT()->killAnimationName = ac->getSilentKillAnimationName() + "_sword";
+
 	return;
-	
 }
 
 //Se llama cuando un malo muere, por combate o asesinato silencioso

@@ -489,15 +489,7 @@ int BTCommon::takeDamage()
 
 int BTCommon::die()
 {
-	std::string killAnimationName; 
-	// Dependiendo del estado del enemigo lanza animacion con o sin espada en la mano
-	EnemyDataComponent* enemy_component = EntityManager::get().getComponent<EnemyDataComponent>(_entity);
-			
-	if(enemy_component->_attentionDegree == attentionDegrees::NORMAL || enemy_component->_attentionDegree == attentionDegrees::PANIC)
-		killAnimationName = _animation_component->getSilentKillAnimationName();
-	else if(enemy_component->_attentionDegree == attentionDegrees::CAUTION || enemy_component->_attentionDegree == attentionDegrees::PERMANENT_CAUTION || enemy_component->_attentionDegree == attentionDegrees::ALERT)
-		killAnimationName = _animation_component->getSilentKillAnimationName() + "_sword";
-
+	//Esperamos a que termine la animacion de kill actual
 	if( _animation_component->actionBlocked(killAnimationName) )
 	{		
 		/*if(killAnimationName != "kill_shadow")*/ _eD->dead();
