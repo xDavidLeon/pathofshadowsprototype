@@ -22,6 +22,9 @@ CApplication::CApplication(void)
 
 	m_bRunningD3D = false;
 	m_subtitles = 0;
+	m_invertX = 0;
+	m_invertY = 0;
+	m_level = 0;
 	m_debug = 0;
 
 	//create window
@@ -132,11 +135,20 @@ void CApplication::InitWindow(void)
 	m_hLbSubsEnabled = CreateWindow("static","Subtitles:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,114,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
 	m_hTrgSubsEnabled = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,110,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
 	
-	m_hLblDebug = CreateWindow("static","Debug:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,144,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
-	m_hCbDebug = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,140,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hLbInvertX = CreateWindow("static","Invert X axis:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,144,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hTrgInvertX = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,140,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
 	
-	m_hBtnStart = CreateWindow("button","Start",WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP,65,170,80,24,m_hWindowLauncher,(HMENU)ID_START,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
-	m_hBtnCancel = CreateWindow("button","Cancel",WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP,175,170,80,24,m_hWindowLauncher,(HMENU)ID_CANCEL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hLbInvertY = CreateWindow("static","Invert Y axis:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,174,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hTrgInvertY = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,170,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	
+	m_hLbLevel = CreateWindow("static","Level selector:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,204,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hTrgLevel = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,200,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	
+	m_hLblDebug = CreateWindow("static","Debug:",WS_CHILD | WS_VISIBLE | SS_LEFT,20,234,200,18,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hCbDebug = CreateWindow("combobox", "", WS_CHILD | WS_VISIBLE | CBS_DROPDOWNLIST | WS_TABSTOP,160,230,160,360,m_hWindowLauncher,NULL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	
+	m_hBtnStart = CreateWindow("button","Start",WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP,65,260,80,24,m_hWindowLauncher,(HMENU)ID_START,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
+	m_hBtnCancel = CreateWindow("button","Cancel",WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP,175,260,80,24,m_hWindowLauncher,(HMENU)ID_CANCEL,(HINSTANCE)GetWindowLong(m_hWindowLauncher,GWL_HINSTANCE),NULL);
 
 	//fill combo boxes
 	SendMessage(m_hCbResolution,CB_ADDSTRING,0,(long)"640 x 480");
@@ -171,6 +183,17 @@ void CApplication::InitWindow(void)
 	SendMessage(m_hTrgSubsEnabled,CB_ADDSTRING,0,(long)"Disabled");
 	SendMessage(m_hTrgSubsEnabled,CB_ADDSTRING,0,(long)"English");
 	SendMessage(m_hTrgSubsEnabled,CB_ADDSTRING,0,(long)"Spanish");
+
+	SendMessage(m_hTrgInvertX,CB_ADDSTRING,0,(long)"No");
+	SendMessage(m_hTrgInvertX,CB_ADDSTRING,0,(long)"Yes");
+
+	SendMessage(m_hTrgInvertY,CB_ADDSTRING,0,(long)"No");
+	SendMessage(m_hTrgInvertY,CB_ADDSTRING,0,(long)"Yes");
+
+	SendMessage(m_hTrgLevel,CB_ADDSTRING,0,(long)"1");
+	SendMessage(m_hTrgLevel,CB_ADDSTRING,0,(long)"2");
+	SendMessage(m_hTrgLevel,CB_ADDSTRING,0,(long)"3");
+
 
 	SendMessage(m_hCbDebug,CB_ADDSTRING,0,(long)"Off");
 	SendMessage(m_hCbDebug,CB_ADDSTRING,0,(long)"On (Press TAB)");
@@ -346,6 +369,9 @@ void CApplication::LoadSettings(void)
 	File >> m_dwAnisotropy;
 	File >> m_dwFullScreen;
 	File >> m_subtitles;
+	File >> m_invertX;
+	File >> m_invertY;
+	File >> m_level;
 	File >> m_debug;
 
 	m_ColorFormat = D3DFMT_A8R8G8B8;
@@ -403,6 +429,25 @@ void CApplication::LoadSettings(void)
 	case 0: SendMessage(m_hTrgSubsEnabled,CB_SETCURSEL,0,0); break;
 	case 1: SendMessage(m_hTrgSubsEnabled,CB_SETCURSEL,1,0); break;
 	case 2: SendMessage(m_hTrgSubsEnabled,CB_SETCURSEL,2,0); break;
+	}
+
+	switch (m_invertX)
+	{
+	case 0: SendMessage(m_hTrgInvertX,CB_SETCURSEL,0,0); break;
+	case 1: SendMessage(m_hTrgInvertX,CB_SETCURSEL,1,0); break;
+	}
+
+	switch (m_invertY)
+	{
+	case 0: SendMessage(m_hTrgInvertY,CB_SETCURSEL,0,0); break;
+	case 1: SendMessage(m_hTrgInvertY,CB_SETCURSEL,1,0); break;
+	}
+
+	switch (m_level)
+	{
+	case 0: SendMessage(m_hTrgLevel,CB_SETCURSEL,0,0); break;
+	case 1: SendMessage(m_hTrgLevel,CB_SETCURSEL,1,0); break;
+	case 2: SendMessage(m_hTrgLevel,CB_SETCURSEL,2,0); break;
 	}
 
 	switch (m_debug)
@@ -474,6 +519,25 @@ void CApplication::SaveSettings(void)
 	case 2: m_subtitles = 2; break;
 	}
 
+	switch (SendMessage(m_hTrgInvertX,CB_GETCURSEL,0,0))
+	{
+	case 0: m_invertX = 0; break;
+	case 1: m_invertX = 1; break;
+	}
+
+	switch (SendMessage(m_hTrgInvertY,CB_GETCURSEL,0,0))
+	{
+	case 0: m_invertY = 0; break;
+	case 1: m_invertY = 1; break;
+	}
+
+	switch (SendMessage(m_hTrgLevel,CB_GETCURSEL,0,0))
+	{
+	case 0: m_level = 0; break;
+	case 1: m_level = 1; break;
+	case 2: m_level = 2; break;
+	}
+
 	switch (SendMessage(m_hCbDebug,CB_GETCURSEL,0,0))
 	{
 	case 0: m_debug = 0; break;
@@ -489,6 +553,9 @@ void CApplication::SaveSettings(void)
 	File << m_dwAnisotropy << endl;
 	File << m_dwFullScreen << endl;
 	File << m_subtitles << endl;
+	File << m_invertX << endl;
+	File << m_invertY << endl;
+	File << m_level << endl;
 	File << m_debug << endl;
 	File.close();
 }//SaveSettings

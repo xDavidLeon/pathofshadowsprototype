@@ -16,7 +16,7 @@ using namespace std;
 //constants
 #define TITLE				"Path of Shadows"
 #define WINDOW_X			350
-#define WINDOW_Y			230
+#define WINDOW_Y			330
 
 //Button ID's
 #define ID_START			1

@@ -45,10 +45,13 @@ public:
 	inline HWND					GetGameWindowHandle(void)					{ return m_hWindowGame; }
 	inline DWORD				GetWidth(void)								{ return m_dwWidth; }
 	inline DWORD				GetHeight(void)								{ return m_dwHeight; }
-	inline LPD3DXFONT					GetDebugFont(void)							{ return m_dbgFont; }
-	inline LPD3DXFONT					GetDebugFontBig(void)							{ return m_dbgFont_big; }
-	inline DWORD				GetLanguage(void)									{ return m_subtitles; }
-	inline DWORD				GetDebug(void)									{ return m_debug; }
+	inline LPD3DXFONT			GetDebugFont(void)							{ return m_dbgFont; }
+	inline LPD3DXFONT			GetDebugFontBig(void)						{ return m_dbgFont_big; }
+	inline DWORD				GetLanguage(void)							{ return m_subtitles; }
+	inline DWORD				GetXinv(void)								{ return m_invertX; }
+	inline DWORD				GetYinv(void)								{ return m_invertY; }
+	inline DWORD				GetLevel(void)								{ return m_level; }
+	inline DWORD				GetDebug(void)								{ return m_debug; }
 
 	inline D3DPRESENT_PARAMETERS GetParameters(void)						{ return m_PresentParameters; }
 
@@ -76,6 +79,12 @@ private:
 								m_hCbResolution,
 								m_hLbSubsEnabled,
 								m_hTrgSubsEnabled,
+								m_hLbInvertX,
+								m_hTrgInvertX,
+								m_hLbInvertY,
+								m_hTrgInvertY,
+								m_hLbLevel,
+								m_hTrgLevel,
 								m_hLblDebug,
 								m_hCbDebug,
 								m_hLblAnisotropy,
@@ -98,6 +107,9 @@ private:
 	LPD3DXFONT					m_dbgFont;
 	LPD3DXFONT					m_dbgFont_big;
 	DWORD						m_subtitles;
+	DWORD						m_invertX;
+	DWORD						m_invertY;
+	DWORD						m_level;
 	DWORD						m_debug;
 
 };

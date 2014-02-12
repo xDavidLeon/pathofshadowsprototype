@@ -26,7 +26,7 @@ public:
 	int inv_x, inv_y;
 
 	void readConfigFile();
-
+	void readConfig();
 };
 
 #endif

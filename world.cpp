@@ -42,7 +42,9 @@ World* World::instance ()
 World::World()
 {
 	//Se lee el archivo de configuracion. Los datos se mantienen en ConfigManager
-	ConfigManager::get().readConfigFile();
+	//ConfigManager::get().readConfigFile();
+	//Ahora los datos que antes se pillaban del config file ahora se pillan de la ventana de inicio
+	ConfigManager::get().readConfig();
 	_currentSceneName = ConfigManager::get().init_scene;
 
 	_mustReload = _mustReset = _creditsActive = false;

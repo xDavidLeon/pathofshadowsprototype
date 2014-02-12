@@ -2,6 +2,7 @@
 #include "globals.h"
 #include <Windows.h>
 #include <cassert>
+#include "main.h"
 
 ConfigManager::ConfigManager(void)
 {
@@ -37,4 +38,20 @@ void ConfigManager::onStartElement (const std::string &elem, MKeyValue &atts)
 		if(atts["value"] == "yes") inv_y = -1;
 		else inv_y = 1;
 	}
+}
+
+void ConfigManager::readConfig()
+{
+	switch(g_App.GetLevel())
+	{
+		case 0: init_scene = "cementerio"; break;
+		case 1: init_scene = "aldea"; break;
+		case 2: init_scene = "patio"; break;
+	}
+
+	if(g_App.GetXinv() == 0) inv_x = 1;
+	else inv_x = -1;
+
+	if(g_App.GetYinv() == 0) inv_y = 1;
+	else inv_y = -1;
 }
