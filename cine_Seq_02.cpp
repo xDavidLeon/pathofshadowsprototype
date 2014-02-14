@@ -7,7 +7,7 @@
 #include "lua_helper.h"
 #include "component_bt.h"
 #include "component_model.h"
-#include "system_unique.h"
+#include "lua_helper.h"
 
 #include "component_light.h"
 #include "component_charcontroller.h"
@@ -25,7 +25,7 @@ CineSeq02::CineSeq02(Entity* entity) : BehaviourTree(entity)
 	((AUTPlayer*)EntityManager::get().getComponent<AutomatComponent>(World::instance()->getPlayer())->getAutomat())->setEnableIdleCG(true);
 
 	//Desactivar tutorial 1
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t001"), false);
+	LuaHelper::get().disableTutorial("t001");
 
 	//Encolamos las 3 cinematicas.
 	CameraSystem::get().addCamToQueue(3);
@@ -184,7 +184,7 @@ int CineSeq02::audio3()
 	_btGoddess->changePlace();
 
 	//Tutorial2 (aim)
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t002"), true);
+	LuaHelper::get().enableTutorial("t002");
 
 	return LEAVE;
 }
@@ -194,14 +194,14 @@ int CineSeq02::tutorialTeleport()
 	if(CIOStatus::instance()->becomesPressed(CIOStatus::instance()->AIM))
 	{
 		//quitar T2, meter T3
-		UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t002"), false);
-		UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t003"), true);
+		LuaHelper::get().disableTutorial("t002");
+		LuaHelper::get().enableTutorial("t003");
 	}
 	else if(CIOStatus::instance()->becomesReleased(CIOStatus::instance()->AIM))
 	{
 		//meter T2, quitar T3
-		UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t002"), true);
-		UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t003"), false);
+		LuaHelper::get().enableTutorial("t002");
+		LuaHelper::get().disableTutorial("t003");
 	}
 
 	if(CIOStatus::instance()->isPressed(CIOStatus::instance()->AIM) && CIOStatus::instance()->becomesPressed(CIOStatus::instance()->TELEPORT))

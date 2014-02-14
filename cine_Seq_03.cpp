@@ -3,7 +3,7 @@
 #include "entity_manager.h"
 #include "world.h"
 #include "component_bt.h"
-#include "system_unique.h"
+#include "lua_helper.h"
 
 CineSeq03::CineSeq03(Entity* entity) : BehaviourTree(entity)
 {
@@ -12,7 +12,7 @@ CineSeq03::CineSeq03(Entity* entity) : BehaviourTree(entity)
 	_btGoddess = static_cast<BTGoddess*>(EntityManager::get().getComponent<BTComponent>(EntityManager::get().getEntityWithName("goddess_bt"))->getBT());
 	
 	//Desactivar T3 (teleport)
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t003"), false);
+	LuaHelper::get().disableTutorial("t003");
 
 	//Audio 4
 	SoundSystem::get().stopSound("control",false,false);
@@ -68,7 +68,7 @@ int CineSeq03::goddessTeleport()
 	CameraSystem::get().activateSubt("st5", 7.0f);
 
 	//Tutorial4
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t004"), true);
+	LuaHelper::get().enableTutorial("t004");
 }
 
 int CineSeq03::die()

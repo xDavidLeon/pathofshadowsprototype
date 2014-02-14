@@ -7,7 +7,7 @@
 #include "component_particle_effect.h"
 #include "entity_factory.h"
 #include "component_player_controller.h"
-#include "system_unique.h"
+#include "lua_helper.h"
 #include "system_renderer.h"
 
 CineSeq01::CineSeq01(Entity* entity) : BehaviourTree(entity)
@@ -111,7 +111,7 @@ int CineSeq01::playerBirth()
 	CameraSystem::get().activateSubt("st1", 3.0f);
 
 	//T1
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t001"), true);
+	LuaHelper::get().enableTutorial("t001");
 
 	//desbloquear player
 	World::instance()->setPlayerLocked(false);

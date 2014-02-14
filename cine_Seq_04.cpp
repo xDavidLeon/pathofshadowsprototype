@@ -4,7 +4,7 @@
 #include "world.h"
 #include "component_bt.h"
 #include "component_automat.h"
-#include "system_unique.h"
+#include "lua_helper.h"
 
 CineSeq04::CineSeq04(Entity* entity) : BehaviourTree(entity)
 {
@@ -13,7 +13,7 @@ CineSeq04::CineSeq04(Entity* entity) : BehaviourTree(entity)
 	_btGoddess = static_cast<BTGoddess*>(EntityManager::get().getComponent<BTComponent>(EntityManager::get().getEntityWithName("goddess_bt"))->getBT());
 	
 	//Desactivar T4 (crear sombra)
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t003"), false);
+	LuaHelper::get().disableTutorial("t003");
 
 	//Audio 6
 	SoundSystem::get().stopSound("sometimes",false,false);
@@ -27,7 +27,8 @@ CineSeq04::CineSeq04(Entity* entity) : BehaviourTree(entity)
 	_btGoddess->setLookat(EntityManager::get().getComponent<TransformComponent>(EntityManager::get().getEntityWithName("txu_g001"))->getPosition());
 
 	//Tutorial 5
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t005"), true);	
+	LuaHelper::get().enableTutorial("t005");
+	LuaHelper::get().disableTutorial("t004");
 }
 
 
@@ -80,9 +81,9 @@ int CineSeq04::tutorialHideCorpse()
 	if(!_clock.count(World::instance()->getElapsedTimeUInSeconds())) return STAY;
 
 	//T5 fuera, T7 y T8
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t005"), false);
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t007"), true);
-	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName("t006"), true);
+	LuaHelper::get().disableTutorial("t005");
+	LuaHelper::get().enableTutorial("t007");
+	LuaHelper::get().enableTutorial("t006");
 
 	//Audio7
 	SoundSystem::get().stopSound("one_guard",false,false);

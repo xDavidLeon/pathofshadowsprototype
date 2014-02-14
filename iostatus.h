@@ -19,6 +19,7 @@ public:
 
 	float getSpeed() const;
 	bool isSprinting() const;
+	bool isPlayer1Connected() const;
 
 	struct TDigital {
 		bool is_pressed;

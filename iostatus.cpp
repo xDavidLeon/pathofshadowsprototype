@@ -361,3 +361,8 @@ bool CIOStatus::isSprinting() const
 
 	return isPressed(SPRINT);
 }
+
+bool CIOStatus::isPlayer1Connected() const
+{
+	return Player1->IsConnected();
+}

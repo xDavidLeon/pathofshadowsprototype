@@ -2776,14 +2776,14 @@
 		<transform>0.34202 0.0 -0.939693 0.0 1.0 0.0 0.939693 0.0 0.34202 -70.1857 4.72729 -29.6186</transform>
 	</obj>
 	<obj>
-		<name>t001</name>
+		<name>t001_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 11.0928 -2.30686 38.7934</transform>
 		<model>
 			<mesh>t001</mesh>
 			<mat>
-				<diffuse>T1</diffuse>
-				<emissive>T1</emissive>
+				<diffuse>T1_k</diffuse>
+				<emissive>T1_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2794,14 +2794,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t002</name>
+		<name>t001_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 11.0928 -2.30686 38.7934</transform>
+		<model>
+			<mesh>t001</mesh>
+			<mat>
+				<diffuse>T1_c</diffuse>
+				<emissive>T1_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t002_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 8.99891 -1.36192 33.8634</transform>
 		<model>
 			<mesh>t002</mesh>
 			<mat>
-				<diffuse>T2</diffuse>
-				<emissive>T2</emissive>
+				<diffuse>T2_k</diffuse>
+				<emissive>T2_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2812,14 +2830,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t003</name>
+		<name>t002_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 8.99891 -1.36192 33.8634</transform>
+		<model>
+			<mesh>t002</mesh>
+			<mat>
+				<diffuse>T2_c</diffuse>
+				<emissive>T2_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 7.62939e-006 0.75 1.50002 9.34601e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t003_k</name>
 		<type>TUTORIAL</type>
 		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.99261 -1.46709 33.8547</transform>
 		<model>
 			<mesh>t003</mesh>
 			<mat>
-				<diffuse>T3</diffuse>
-				<emissive>T3</emissive>
+				<diffuse>T3_k</diffuse>
+				<emissive>T3_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2830,14 +2866,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t004</name>
+		<name>t003_c</name>
+		<type>TUTORIAL</type>
+		<transform>1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 8.99261 -1.46709 33.8547</transform>
+		<model>
+			<mesh>t003</mesh>
+			<mat>
+				<diffuse>T3_c</diffuse>
+				<emissive>T3_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-0.226247 -0.437076 0.844364 0.226247 0.437076 -0.844364</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t004_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.965926 0.0 0.258819 0.0 1.0 0.0 -0.258819 0.0 0.965926 13.5133 -2.57779 22.733</transform>
 		<model>
 			<mesh>t004</mesh>
 			<mat>
-				<diffuse>T4</diffuse>
-				<emissive>T4</emissive>
+				<diffuse>T4_k</diffuse>
+				<emissive>T4_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2848,14 +2902,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t005</name>
+		<name>t004_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.965926 0.0 0.258819 0.0 1.0 0.0 -0.258819 0.0 0.965926 13.5133 -2.57779 22.733</transform>
+		<model>
+			<mesh>t004</mesh>
+			<mat>
+				<diffuse>T4_c</diffuse>
+				<emissive>T4_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.29904 0.0 1.5 1.29904 9.98974e-005 -1.5</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t005_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 9.57255 -2.57779 16.3432</transform>
 		<model>
 			<mesh>t005</mesh>
 			<mat>
-				<diffuse>T5</diffuse>
-				<emissive>T5</emissive>
+				<diffuse>T5_k</diffuse>
+				<emissive>T5_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2866,14 +2938,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t006</name>
+		<name>t005_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 9.57255 -2.57779 16.3432</transform>
+		<model>
+			<mesh>t005</mesh>
+			<mat>
+				<diffuse>T5_c</diffuse>
+				<emissive>T5_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t006_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 5.21989 -2.57779 15.3821</transform>
 		<model>
 			<mesh>t006</mesh>
 			<mat>
-				<diffuse>T6</diffuse>
-				<emissive>T6</emissive>
+				<diffuse>T6_k</diffuse>
+				<emissive>T6_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2884,14 +2974,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t009</name>
+		<name>t006_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 5.21989 -2.57779 15.3821</transform>
+		<model>
+			<mesh>t006</mesh>
+			<mat>
+				<diffuse>T6_c</diffuse>
+				<emissive>T6_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.64952 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t009_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -15.2994 1.9319 9.73502</transform>
 		<model>
 			<mesh>t009</mesh>
 			<mat>
-				<diffuse>T9</diffuse>
-				<emissive>T9</emissive>
+				<diffuse>T9_k</diffuse>
+				<emissive>T9_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2902,14 +3010,32 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t010</name>
+		<name>t009_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -15.2994 1.9319 9.73502</transform>
+		<model>
+			<mesh>t009</mesh>
+			<mat>
+				<diffuse>T9_c</diffuse>
+				<emissive>T9_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 5.72205e-006 0.75 1.50002 9.15527e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t010_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -30.4832 0.948156 2.75685</transform>
 		<model>
 			<mesh>t010</mesh>
 			<mat>
-				<diffuse>T10</diffuse>
-				<emissive>T10</emissive>
+				<diffuse>T10_k</diffuse>
+				<emissive>T10_k</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -2920,14 +3046,50 @@
 		<disabled/>
 	</obj>
 	<obj>
-		<name>t011</name>
+		<name>t010_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.965926 0.0 0.258819 0.0 -1.0 0.0 -30.4832 0.948156 2.75685</transform>
+		<model>
+			<mesh>t010</mesh>
+			<mat>
+				<diffuse>T10_c</diffuse>
+				<emissive>T10_c</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.50002 7.62939e-006 0.75 1.50002 9.34601e-005 -0.75</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t011_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.836516 0.5 0.224144 0.430682 -0.852869 0.295174 0.338752 -0.150383 -0.92878 -53.0926 5.04175 -20.7787</transform>
 		<model>
 			<mesh>t011</mesh>
 			<mat>
-				<diffuse>T11</diffuse>
-				<emissive>T11</emissive>
+				<diffuse>T11_k</diffuse>
+				<emissive>T11_k</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.4621 0.390953 -1.34063 1.4621 -0.39085 1.34063</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t011_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.836516 0.5 0.224144 0.430682 -0.852869 0.295174 0.338752 -0.150383 -0.92878 -53.0926 5.04175 -20.7787</transform>
+		<model>
+			<mesh>t011</mesh>
+			<mat>
+				<diffuse>T11_c</diffuse>
+				<emissive>T11_c</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>
@@ -4533,14 +4695,32 @@
 		</model>
 	</obj>
 	<obj>
-		<name>t007</name>
+		<name>t007_k</name>
 		<type>TUTORIAL</type>
 		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 7.53359 -2.57779 18.975</transform>
 		<model>
 			<mesh>t007</mesh>
 			<mat>
-				<diffuse>T7</diffuse>
-				<emissive>T7</emissive>
+				<diffuse>T7_k</diffuse>
+				<emissive>T7_k</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>-1.875 0.0 -0.649519 1.875 9.98974e-005 0.649519</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t007_c</name>
+		<type>TUTORIAL</type>
+		<transform>0.258819 0.0 -0.965926 0.0 1.0 0.0 0.965926 0.0 0.258819 7.53359 -2.57779 18.975</transform>
+		<model>
+			<mesh>t007</mesh>
+			<mat>
+				<diffuse>T7_c</diffuse>
+				<emissive>T7_c</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>

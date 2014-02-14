@@ -13597,14 +13597,32 @@
 		<transform>-0.819152 0.0 0.573576 0.0 1.0 0.0 -0.573576 0.0 -0.819152 34.5921 0.0627608 41.0144</transform>
 	</obj>
 	<obj>
-		<name>t012</name>
+		<name>t012_k</name>
 		<type>TUTORIAL</type>
 		<transform>-0.642788 0.0 0.766045 0.0 1.0 0.0 -0.766045 0.0 -0.642788 -22.2266 -0.446987 -26.2104</transform>
 		<model>
 			<mesh>t012</mesh>
 			<mat>
-				<diffuse>T8</diffuse>
-				<emissive>T8</emissive>
+				<diffuse>T8_k</diffuse>
+				<emissive>T8_k</emissive>
+				<material_name>tech_fwd_basic</material_name>
+			</mat>
+			<visible>true</visible>
+			<aabb>2.23861 0.0 0.130238 -2.23861 9.99868e-005 -0.130238</aabb>
+		<forward>true</forward>
+		<additive>true</additive>
+		</model>
+		<disabled/>
+	</obj>
+	<obj>
+		<name>t012_c</name>
+		<type>TUTORIAL</type>
+		<transform>-0.642788 0.0 0.766045 0.0 1.0 0.0 -0.766045 0.0 -0.642788 -22.2266 -0.446987 -26.2104</transform>
+		<model>
+			<mesh>t012</mesh>
+			<mat>
+				<diffuse>T8_c</diffuse>
+				<emissive>T8_c</emissive>
 				<material_name>tech_fwd_basic</material_name>
 			</mat>
 			<visible>true</visible>

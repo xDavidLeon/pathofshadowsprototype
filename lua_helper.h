@@ -30,8 +30,8 @@ public:
 
 	void playGoddessVoice(const std::string& rp_name);
 
-	void disableTutorial(const std::string& t_name);
-	void enableTutorial(const std::string& t_name);
+	void disableTutorial(std::string t_name);
+	void enableTutorial(std::string t_name);
 
 	void enableSubtitle(const std::string& s_name, float time);
 

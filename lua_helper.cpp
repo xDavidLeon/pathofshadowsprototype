@@ -103,13 +103,25 @@ void LuaHelper::playGoddessVoice(const std::string& voice_wav_name)
 	SoundSystem::get().playSFX(voice_wav_name, "data/sfx/voices/goddess/"+voice_wav_name+".ogg", "goddess", 1.0f, 1.0f, false);
 }
 
-void LuaHelper::disableTutorial(const std::string& t_name)
+void LuaHelper::disableTutorial(std::string t_name)
 {
+	//Si el controller esta conectado usamos tutoriales de controller, sino de teclado
+	if(CIOStatus::instance()->isPlayer1Connected())
+		t_name = t_name + "_c";
+	else
+		t_name = t_name + "_k";
+
 	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName(t_name), false);
 }
 
-void LuaHelper::enableTutorial(const std::string& t_name)
+void LuaHelper::enableTutorial(std::string t_name)
 {
+	//Si el controller esta conectado usamos tutoriales de controller, sino de teclado
+	if(CIOStatus::instance()->isPlayer1Connected())
+		t_name = t_name + "_c";
+	else
+		t_name = t_name + "_k";
+
 	UniqueSystem::get().tutorialAppear(EntityManager::get().getEntityWithName(t_name), true);
 }
 
